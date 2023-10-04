@@ -23,8 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={sora.className}>
         <AnimatePresence mode="wait">
-          <motion.div>
             <Transtition />
+          <motion.div>
             <Nav />
             <Header />
             {children}

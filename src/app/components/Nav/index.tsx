@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Link from "next/link";
 
 import {
@@ -10,6 +10,7 @@ import {
   HiEnvelope,
 } from "react-icons/hi2";
 import { usePathname, useRouter } from "next/navigation";
+import { LinkCotaniner, NavContainer } from "./style";
 export const navData = [
   { name: "home", path: "/", icon: <HiHome /> },
   { name: "about", path: "/about", icon: <HiUser /> },
@@ -29,27 +30,28 @@ export const navData = [
 export const Nav = () => {
   const pathname = usePathname();
   return (
-    <nav>
-      <div className="">
+    <NavContainer>
+      <div className="nav">
         {navData.map((link, index) => {
           return (
-            <Link
+            <LinkCotaniner
               href={link.path}
               key={index}
               className={link.path === pathname ? "" : ""}
             >
               <div>
                 {/* posiiton absolute rigth 0  hiden  so e pra ver isso no hover */}
-              <div>{link.name}</div>
+                {/* <div className="hidden">{link.name}</div> */}
               </div>
+              <div>{/* fazer um triangulo pra fica com efeito foda  */}</div>
               <div>
-                {/* fazer um triangulo pra fica com efeito foda  */}
+                {link.name}
+                {link.icon}
               </div>
-              <div>{link.name}</div>
-            </Link>
+            </LinkCotaniner>
           );
         })}
       </div>
-    </nav>
+    </NavContainer>
   );
 };
