@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 
 import {
@@ -8,7 +9,7 @@ import {
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
-import { useRouter } from "next/router";
+import { usePathname, useRouter } from "next/navigation";
 export const navData = [
   { name: "home", path: "/", icon: <HiHome /> },
   { name: "about", path: "/about", icon: <HiUser /> },
@@ -26,8 +27,7 @@ export const navData = [
   },
 ];
 export const Nav = () => {
-  const router = useRouter();
-  const pathname = router.pathname;
+  const pathname = usePathname();
   return (
     <nav>
       <div className="">
