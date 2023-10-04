@@ -1,11 +1,11 @@
 "use client";
-import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import { Nav } from "./components/Nav";
 import { Header } from "./components/Header";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { Transtition } from "./components/Transition";
+import { GlobalStyles } from "./globalStyles";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -18,18 +18,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const router = useRouter;
   return (
     <html lang="en">
       <body className={sora.className}>
         <AnimatePresence mode="wait">
-            <Transtition />
+          <Transtition />
           <motion.div>
             <Nav />
             <Header />
             {children}
           </motion.div>
         </AnimatePresence>
+        <GlobalStyles />
       </body>
     </html>
   );
