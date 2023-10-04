@@ -44,8 +44,8 @@ export const Nav = () => {
                 {/* <div className="hidden">{link.name}</div> */}
               </div>
               <div>{/* fazer um triangulo pra fica com efeito foda  */}</div>
-              <div>
-                {link.name}
+              <div className="icon">
+                <span>{link.name}</span>
                 {link.icon}
               </div>
             </LinkCotaniner>
