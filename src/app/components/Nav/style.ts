@@ -3,7 +3,11 @@ import styled from 'styled-components'
 import Link from 'next/link'
 export const LinkCotaniner = styled(Link)`
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background: purple;
   div.hidden {
+    display: flex;
     visibility: hidden;
   }
 `
@@ -17,6 +21,12 @@ export const NavContainer = styled.nav`
   width: 50px;
   span {
     display: none;
+  }
+  .icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
   }
   .icon:hover {
     span {
