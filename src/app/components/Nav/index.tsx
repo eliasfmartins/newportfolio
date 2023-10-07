@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 
 import {
   HiHome,
@@ -31,7 +30,7 @@ export const Nav = () => {
   const pathname = usePathname();
   return (
     <NavContainer>
-      <div className="nav">
+      <div className="navcontent">
         {navData.map((link, index) => {
           return (
             <LinkCotaniner
@@ -40,10 +39,10 @@ export const Nav = () => {
               className={link.path === pathname ? "" : ""}
             >
               <div>
-                {/* posiiton absolute rigth 0  hiden  so e pra ver isso no hover */}
-                {/* <div className="hidden">{link.name}</div> */}
+                <div className="namecontainer">
+                  <div className="name">{link.name}</div>
+                </div>
               </div>
-              <div>{/* fazer um triangulo pra fica com efeito foda  */}</div>
               <div className="icon">
                 <span>{link.name}</span>
                 {link.icon}

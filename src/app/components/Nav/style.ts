@@ -3,65 +3,92 @@ import styled from 'styled-components'
 import Link from 'next/link'
 export const LinkCotaniner = styled(Link)`
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   background: purple;
+  text-align: center;
+  
   div.hidden {
     display: flex;
     visibility: hidden;
   }
+  &:hover{
+    color: red;
+    transition: 0.3s;
+  }
+  .namecontainer{
+    background: white;
+    position: relative;
+    display:flex;
+    align-items: center;
+    padding: 6px;
+  }
+  .namecontainerall{
+    position: absolute;
+    padding-right: 14px;
+    right: 0;
+    visibility: hidden;
+  }
+  .name{
+    font-size: 12px;
+
+  }
 `
 export const NavContainer = styled.nav`
+  display: flex;
+  flex-direction: column;
+  background: lightgreen;
+  align-items: center;
+  padding: 4rem;
+  row-gap: 1rem;
   position: fixed;
-  background: red;
-  top: 50%;
+  max-height: max-content;
+  bottom: 0;
+  margin-top: auto;
   right: 2%;
-  transform: translate(0%, -50%);
-  border-radius: 20px;
-  width: 50px;
-  span {
-    display: none;
-  }
-  .icon{
+  z-index: 50;
+  top: 0;
+  width: 100%;
+
+  .navcontent {
+    z-index: 55;
+    background: red;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    row-gap: 2.5rem;
+    padding: 2rem 1rem;
+    height: 400px;
+    background: red;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: white;
   }
-  .icon:hover {
-    span {
-      display: flex;
+  @media (min-width: 768px) {
+    .navcontent {
+      padding-left: 10rem;
+      padding-right: 10rem;
     }
   }
-  .nav {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-    height: 80vh;
-  }
-  a {
-    text-decoration: none;
-  }
-  @media (max-width: 700px) {
-    height: 50px;
-    display: flex;
-    width: 90%;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%, 450%);
-    background: red;
-    border-radius: 20px;
-    .nav {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
-      justify-content: space-around;
-      height: auto;
-      align-items: center;
+  @media (min-width: 1280px) {
+    padding: 5rem;
+    height: 100vh;
+    max-width: 28rem;
+    width: 4rem;
+    justify-content: center;
+    .navcontent {
+      max-height: max-content;
+      padding: 0;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      border-radius: 9999px;
+    }
+    .namecontainerall{
+
     }
   }
 `

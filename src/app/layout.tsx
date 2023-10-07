@@ -3,7 +3,6 @@ import { Sora } from "next/font/google";
 import { Nav } from "./components/Nav";
 import { Header } from "./components/Header";
 import { AnimatePresence, motion } from "framer-motion";
-import { useRouter } from "next/navigation";
 import { Transtition } from "./components/Transition";
 import { GlobalStyles } from "./globalStyles";
 
