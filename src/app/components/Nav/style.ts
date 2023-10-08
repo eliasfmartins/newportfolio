@@ -5,103 +5,151 @@ export const LinkCotaniner = styled(Link)`
   display: flex;
   position: relative;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  div.hidden {
-    display: flex;
-    visibility: hidden;
-  }
+  transition: all 3s;
+ 
   &:hover {
     color: red;
-    transition: 0.3s;
+    visibility: visible;
+    .group {
+      visibility: visible;
+    }
+    .namecontainer {
+    }
+  }
+  .name {
+    font-size: 12px;
+    line-height: 1;
   }
   .namecontainer {
+    visibility: hidden;
+    border-radius: 5px;
+    background: gray;
     position: relative;
     display: flex;
     align-items: center;
     padding: 6px;
   }
-  .group {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .triangle {
+    visibility: hidden;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: -5px;
+    background: gray;
   }
-  .group:hover {
-    .name {
+  .group {
+    position: absolute;
+    padding-right: 14px;
+    right: 40px;
+    visibility: hidden;
+    border-radius: 6px;
+    &:hover {
       visibility: visible;
     }
   }
-  .name {
-    position: absolute;
-    text-decoration: none;
-    /* visibility: hidden; */
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    background: white;
-    z-index: 10;
-  }
-  .triangle {
-    position: absolute;
-    left: 0;
-    margin-left: -10px;
-    background: white;
-    width: 15px;
-    height: 15px;
-    transform: rotate(45deg);
-  }
-  .icon {
-    color: white;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: red;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    border: solid 1px white;
-    a {
+  @media (min-width: 1280px) {
+    &:hover {
+      color: red;
+      visibility: visible;
+      .group {
+        visibility: visible;
+      }
+      .namecontainer {
+        visibility: visible;
+      }
+      .triangle {
+        visibility: visible;
+      }
+    }
+    .group {
+      position: absolute;
+      padding-right: 14px;
+      right: 40px;
+      visibility: hidden;
+      border-radius: 6px;
+      &:hover {
+        visibility: visible;
+      }
+    }
+    .triangle {
+      transform: rotate(45deg);
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      right: -5px;
+      background: gray;
+    }
+    .name {
+      font-size: 12px;
+      line-height: 1;
+    }
+    .namecontainer {
+      border-radius: 5px;
+      background: gray;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 6px;
+      &:hover {
+        visibility: visible;
+      }
     }
   }
-  text-decoration: none;
 `
 export const NavContainer = styled.nav`
   display: flex;
   flex-direction: column;
-  background: lightgreen;
-  justify-content: center;
-  align-items: center;
   position: fixed;
-  right: 2%;
-  bottom: 8%;
-  width: 20px;
-  border-radius: 50px;
+  bottom: 0;
+  margin-top: auto;
+  align-items: center;
+  height: max-content;
+  z-index: 50;
+  top: 0;
+  width: 100%;
+  row-gap: 1rem;
+   .actived {
+    color: black;
+  }
 
   .navcontent {
+    background-color: red;
+    height: auto;
     display: flex;
     width: 100%;
-    align-items: center;
     justify-content: space-between;
-    row-gap: 1.5rem;
+    align-items: center;
+    height: 80px;
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
   @media (min-width: 768px) {
-  }
-  @media (min-width: 1280px) {
-    padding: 1rem;
-    height: 80vh;
-    max-width: 28rem;
-    width: 5rem;
-    justify-content: center;
     .navcontent {
-      height: 80vh;
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    justify-content: center;
+    row-gap: 1rem;
+    right: 2%;
+    height: 100vh;
+    max-width: 28rem;
+    width: 4rem;
+
+    .navcontent {
       flex-direction: column;
       justify-content: center;
-      line-height: 1.5rem;
+      padding: 2rem;
+      row-gap: 2.5rem;
+
+      font-size: 1.5rem;
+      line-height: 2rem;
+      height: max-content;
+      border-radius: 9999px;
     }
   }
 `

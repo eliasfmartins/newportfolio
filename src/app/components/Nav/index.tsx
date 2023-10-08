@@ -36,17 +36,17 @@ export const Nav = () => {
             <LinkCotaniner
               href={link.path}
               key={index}
-              className={link.path === pathname ? "" : ""}
+              className={link.path === pathname ? "actived" : ""}
             >
               <div className="group">
                 <div className="namecontainer">
-                  <div className="name" style={{}}>
-                    <a>{link.name}</a>
+                  <div className="name">{link.name}</div>
+                  <div className="triangle">
+
                   </div>
-                  <div className="triangle"></div>
                 </div>
-                <div className="icon">{link.icon}</div>
               </div>
+              {link.icon}
             </LinkCotaniner>
           );
         })}
