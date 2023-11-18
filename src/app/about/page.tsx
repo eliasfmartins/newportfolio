@@ -1,7 +1,9 @@
+/* eslint-disable react/jsx-key */
 'use client'
 import { useState } from "react"
 import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact, FaWordpress } from "react-icons/fa";
 import { SiAdobephotoshop, SiAdobexd, SiFramer, SiNextdotjs } from "react-icons/si";
+import { AboutContainer, AboutContent } from './style';
 const aboutData = [
   {
     title: 'skills',
@@ -9,13 +11,13 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 size={30} />,
+          <FaCss3 size={30} />,
+          <FaJs size={30} />,
+          <FaReact size={30} />,
+          <SiNextdotjs size={30} />,
+          <SiFramer size={30} />,
+          <FaWordpress size={30} />,
         ],
       },
       {
@@ -76,38 +78,46 @@ export default function About() {
   const [index, setIndex] = useState(0)
   //impoortar circle
   return (
-    <div>
+    <AboutContainer>
+      <AboutContent>
 
-      <div>
-        About
-      </div>
-      <div className="container">
-        <div>Text</div>
-        <div>
+        <div className="about" >
+          About
+        </div>
+        <div className="container">
+          <div>Text</div>
           <div>
-            {aboutData.map((item, itemIndex) => {
+            <div className="skills">
+              {aboutData.map((item, itemIndex) => {
+                return (
+                  <div key={itemIndex} onClick={() => setIndex(itemIndex)} className={index === itemIndex ? 'on' : 'defalt'}>
+                    <h2>
+                      {item.title}
+
+                    </h2>
+                  </div>
+                )
+              })}
+            </div>
+            <div>{aboutData[index].info.map((item, itemIndex) => {
               return (
-                <div key={itemIndex}>
-                  {item.title}
+                <div key={itemIndex} className="aboutskill" >
+                  <div >{item.title}</div>
+                  <div>-</div>
+                  <div className="icons">
+
+                    <div className="icons">{item.stage}</div>
+                    {item.icons?.map((icon, itemIndex) => {
+                      return <div key={itemIndex} >{icon}</div>
+                    })}
+                  </div>
                 </div>
               )
-            })}
+            })}</div>
           </div>
-          <div>{aboutData[index].info.map((item, itemIndex) => {
-            return (
-              <div key={itemIndex}>
-                <div>{item.title}</div>
-                <div>-</div>
-                <div>{item.stage}</div>
-                {item.icons?.map((icon, itemIndex) => {
-                  return <div key={itemIndex}>{icon}</div>
-                })}
-              </div>
-            )
-          })}</div>
-        </div>
 
-      </div>
-    </div>
+        </div>
+      </AboutContent>
+    </AboutContainer >
   )
 }
