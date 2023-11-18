@@ -49,8 +49,22 @@ flex-direction: column;
 .on{
   color: red;
 }
+.on::after{
+  content: '';
+  background: red;
+  transition: 0.5s;
+
+}
 .defalt{
   color: blue;
+  cursor: pointer;
+  position: relative;
+  ::after{
+    content: '';
+    width: 80px;
+    height: 20px;
+    background: white;
+  }
 }
 
 `;
