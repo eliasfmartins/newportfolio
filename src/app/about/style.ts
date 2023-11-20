@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const AboutContainer = styled.main`
 display: flex;
 align-items: center;
 justify-content: center;
-`
+`;
 export const AboutContent = styled.div`
  height: calc(100vh - 27px);
   gap: 2rem;

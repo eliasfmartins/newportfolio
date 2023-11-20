@@ -88,7 +88,9 @@ export default function About() {
 					<p>Lorem ipsum dolor, sit <span>teste aqui</span>amet consectetur adipisicing elit. Deleniti tenetur, optio voluptatum mollitia autem neque ullam culpa repellendus dicta, qui nihil laborum! Itaque quo nam obcaecati totam expedita nihil aliquid!</p>
 					<div>
 						<CountUp start={0} end={10} duration={5} />
+						<CountUp start={0} end={1000} duration={5} style={{ color: 'red', fontWeight: 'bolder', fontSize: '2rem' }} />
 					</div>
+					<CountUp start={0} end={1000} duration={5} />
 				</div>
 				<div className="container">
 					<div>
