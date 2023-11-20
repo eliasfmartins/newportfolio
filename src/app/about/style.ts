@@ -19,6 +19,9 @@ height: 100%;
 background: pink;
 width: 50%;
 display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2rem;
 }
 .container{
   height: 100%;
@@ -35,36 +38,55 @@ flex-direction: column;
 .aboutData{
   padding: 5px;
   border-bottom: 2px solid black;
+  
 }
 .icons{
   display: flex;
   gap: 1rem;
 }
 .aboutskill{
-  height: 200px;
+  background: lightblue;
   display: flex;
   align-items: center;
   /* justify-content: center; */
+  position: relative;
 }
 .on{
-  color: red;
+  color: white;
+  position: relative;
+  padding: 5px;
 }
 .on::after{
   content: '';
-  background: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: black;
   transition: 0.5s;
+  border-radius: 12px;
 
 }
 .defalt{
+  padding: 5px;
+  transition: 0.5s;
   color: blue;
   cursor: pointer;
   position: relative;
-  ::after{
-    content: '';
-    width: 80px;
-    height: 20px;
-    background: white;
-  }
+  
 }
+.defalt::after{ 
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: black;
+  transition: 0.5s;
+  }
+  
+
 
 `;
