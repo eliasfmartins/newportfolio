@@ -7,6 +7,8 @@ import { Transtition } from './components/Transition';
 import { GlobalStyles } from './globalStyles';
 import StyledComponentsRegistry from './lib/registry';
 import { usePathname } from 'next/navigation';
+import { url } from 'inspector';
+import styled from 'styled-components';
 
 const sora = Sora({
 	subsets: ['latin'],
@@ -21,7 +23,8 @@ export default function RootLayout({
 	const pathname = usePathname();
 	return (
 		<html lang="en">
-			<body className={sora.className}>
+			<BodyContainer className={sora.className}  >
+
 				<StyledComponentsRegistry>
 
 					<AnimatePresence mode="wait">
@@ -34,7 +37,10 @@ export default function RootLayout({
 					</AnimatePresence>
 					<GlobalStyles />
 				</StyledComponentsRegistry>
-			</body>
-		</html>
+			</BodyContainer>
+		</html >
 	);
 }
+export const BodyContainer = styled.body`
+	background-image: url('../../public/396752118_6817117885001262_5533264637461018190_n.jpg');
+`;

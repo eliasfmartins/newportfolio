@@ -1,5 +1,6 @@
 'use client';
 
+import styled from 'styled-components';
 import { WorkSlider } from '../components/WorksSllider copy';
 
 
@@ -20,3 +21,6 @@ export default function work() {
 		</div>
 	);
 }
+export const MainContainer = styled`
+
+`;
