@@ -6,26 +6,27 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Transtition } from './components/Transition';
 import { GlobalStyles } from './globalStyles';
 import StyledComponentsRegistry from './lib/registry';
+import { usePathname } from 'next/navigation';
 
 const sora = Sora({
 	subsets: ['latin'],
 	variable: '--font-sora',
 	weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
 });
-
 export default function RootLayout({
 	children,
 }: {
 	children: React.ReactNode;
 }) {
+	const pathname = usePathname();
 	return (
 		<html lang="en">
 			<body className={sora.className}>
 				<StyledComponentsRegistry>
 
 					<AnimatePresence mode="wait">
-						<Transtition />
-						<motion.div>
+						<Transtition key={pathname} />
+						<motion.div >
 							<Nav />
 							<Header />
 							{children}
