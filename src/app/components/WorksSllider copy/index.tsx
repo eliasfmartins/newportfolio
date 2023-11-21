@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+
 const workSlides = {
 	slides: [
 		{
@@ -49,48 +50,39 @@ const workSlides = {
 };
 
 
-
 import { Pagination } from 'swiper/modules';
 
 import { BsArrowRight } from 'react-icons/bs';
+import Image from 'next/image';
 
 export const WorkSlider = () => {
 	return (
-		<Swiper breakpoints={{
-			320: {
-				slidesPerView: 1,
-				spaceBetween: 15,
-			},
-			640: {
-				slidesPerView: 3,
-				spaceBetween: 15,
-
-			},
-		}}
+		<Swiper
+			spaceBetween={10}
 			freeMode={true}
 			pagination={{
-
 				clickable: true
 			}}
 			modules={[Pagination]}
-			style={{ height: 340 }}
+			style={{ height: 380 }}
 		>
 
 			{
-				WorkSlider.slides.map((item, index) => {
-					return <SwiperSlide key={index}>
-						<div>
-							<div>{item.icon}</div>
-							<div>
+				workSlides.slides.map((slide, index) => {
+					return (
 
-								<div>{item.title}</div>
-								<div>{item.description}</div>
+						<SwiperSlide key={index}>
+							<div style={{ display: 'flex', flexDirection: 'column' }}>
+								{slide.images.map((img, index) => {
+									return (<div key={index}>
+										<div>
+											<Image src={img.path} width={500} height={300} alt='**' />
+										</div>
+									</div>);
+								})}
 							</div>
-							<div>
-								<RxArrowTopRight />
-							</div>
-						</div>
-					</SwiperSlide>;
+						</SwiperSlide>
+					);
 				})
 			}
 		</Swiper>
