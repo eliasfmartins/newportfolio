@@ -3,48 +3,56 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+const workSlides = {
+	slides: [
+		{
+			images: [
+				{
+					title: 'title',
+					path: '/thumb1.jpg',
+				},
+				{
+					title: 'title',
+					path: '/thumb2.jpg',
+				},
+				{
+					title: 'title',
+					path: '/thumb3.jpg',
+				},
+				{
+					title: 'title',
+					path: '/thumb4.jpg',
+				},
+			],
+		},
+		{
+			images: [
+				{
+					title: 'title',
+					path: '/thumb4.jpg',
+				},
+				{
+					title: 'title',
+					path: '/thumb1.jpg',
+				},
+				{
+					title: 'title',
+					path: '/thumb2.jpg',
+				},
+				{
+					title: 'title',
+					path: '/thumb3.jpg',
+				},
+			],
+		},
+	],
+};
 
 
-import {
-	RxCrop,
-	RxDesktop,
-	RxPencil2,
-	RxReader,
-	RxRocket,
-	// RxArrowRight,
-	RxArrowTopRight,
-} from 'react-icons/rx';
 
-import { FreeMode, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 
-const serviceData = [
-	{
-		icon: <RxCrop />,
-		title: 'Branding',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-	},
-	{
-		icon: <RxPencil2 />,
-		title: 'Design',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-	},
-	{
-		icon: <RxDesktop />,
-		title: 'Development',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-	},
-	{
-		icon: <RxReader />,
-		title: 'Copywriting',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-	},
-	{
-		icon: <RxRocket />,
-		title: 'SEO',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-	},
-];
-
+import { BsArrowRight } from 'react-icons/bs';
 
 export const WorkSlider = () => {
 	return (
@@ -64,12 +72,12 @@ export const WorkSlider = () => {
 
 				clickable: true
 			}}
-			modules={[FreeMode, Pagination]}
+			modules={[Pagination]}
 			style={{ height: 340 }}
 		>
 
 			{
-				serviceData.map((item, index) => {
+				WorkSlider.slides.map((item, index) => {
 					return <SwiperSlide key={index}>
 						<div>
 							<div>{item.icon}</div>
