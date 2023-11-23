@@ -52,7 +52,7 @@ const workSlides = {
 
 import { Pagination } from 'swiper/modules';
 
-import { BsArrowRight } from 'react-icons/bs';
+// import { BsArrowRight } from 'react-icons/bs';
 import Image from 'next/image';
 
 export const WorkSlider = () => {

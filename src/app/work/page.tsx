@@ -10,7 +10,7 @@ import { WorkSlider } from '../components/WorksSllider copy';
 
 export default function work() {
 	return (
-		<div>
+		<WorkContainer>
 			<div>
 
 				<h2>Works</h2>
@@ -18,9 +18,10 @@ export default function work() {
 				<WorkSlider />
 
 			</div>
-		</div>
+		</WorkContainer>
 	);
 }
-export const MainContainer = styled`
-
+export const WorkContainer = styled.main`
+	background: url('./site-bg.svg');
+	height: 100vh;
 `;

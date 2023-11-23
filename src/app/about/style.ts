@@ -4,10 +4,11 @@ export const AboutContainer = styled.main`
 display: flex;
 align-items: center;
 justify-content: center;
+background-image: url('/public/site-bg.svg');
 `;
 export const AboutContent = styled.div`
  height: calc(100vh - 27px);
-  gap: 2rem;
+ gap: 2rem;
  width: 100%;
  max-width: 1200px;
  padding: 0 2rem;
