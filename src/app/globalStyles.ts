@@ -7,7 +7,9 @@ export const GlobalStyles = createGlobalStyle`
   }
 
 	body {
-		background-Image: url('./site-bg.svg');
+		/* background-Image: url('./background.svg'); */
+		background-Image: url('./bkground.svg');
+		color: white;
  }
  
 `;

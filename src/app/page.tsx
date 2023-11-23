@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { fadeIn } from './variants';
 import styled from 'styled-components';
+import { RoutateBtn } from './components/Routatebtn';
 
 export default function Home() {
 	return (
@@ -29,10 +30,10 @@ export default function Home() {
 					exit="hidden"
 				>
 					{/* <ProjectsBtn /> */}
-					<button>Projectsbtn</button>
+					<RoutateBtn />
 				</motion.div>
 			</div>
-			<div>image</div>
+			<div className='image'></div>
 			{/* sem background pra baguia com fundo ele q turou o background*/}
 			{/* mix color css como n sei */}
 			<div>particles</div>
@@ -40,4 +41,13 @@ export default function Home() {
 	);
 }
 export const PageContainer = styled.main`
+.image{
+  background: url('/explosion.png');
+	mix-blend-mode: color-dodge; 
+	width: 1200px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
 `;
