@@ -4,10 +4,12 @@ import { motion } from 'framer-motion';
 import { fadeIn } from './variants';
 import styled from 'styled-components';
 import { RoutateBtn } from './components/Routatebtn';
+import { TopLeftImg } from './components/TopLeftImg';
 
 export default function Home() {
 	return (
 		<PageContainer as={motion.div}>
+			<TopLeftImg />
 			<div>
 				<h1>
 					Trasforming Ideas <br /> Into <span>Digital Reality</span>

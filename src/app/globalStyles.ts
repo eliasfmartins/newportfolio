@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 	body {
 		/* background-Image: url('./background.svg'); */
 		background-Image: url('./bkground.svg');
+		/* background: #54DFE6; */
 		color: white;
  }
  
