@@ -7,10 +7,16 @@ export const GlobalStyles = createGlobalStyle`
   }
 
 	body {
-		/* background-Image: url('./background.svg'); */
-		background-Image: url('./bkground.svg');
-		/* background: #54DFE6; */
-		color: white;
- }
+	  background-image: url('./bkground.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Adicione as propriedades abaixo para ocupar toda a altura da tela */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
  
 `;
