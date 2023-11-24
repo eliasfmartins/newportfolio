@@ -46,10 +46,13 @@ export default function Home() {
 }
 export const PageContainer = styled.main`
 .image{
-  background: url('/explosion.png');
-	mix-blend-mode: lighten; 
-	width: 1200px;
-	height: 100%;
+  background-image: url('./explosion.png');
+	mix-blend-mode: luminosity; 
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 	position: absolute;
 	right: 0;
 	bottom: 0;
