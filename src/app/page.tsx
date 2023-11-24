@@ -46,23 +46,36 @@ export default function Home() {
 }
 export const PageContainer = styled.main`
 .image{
+	position: relative;
   background-image: url('./explosion.png');
-	mix-blend-mode: luminosity; 
-	width: 100vw;
-	height: 100vh;
-	background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-	position: absolute;
-	right: 0;
-	bottom: 0;
+  mix-blend-mode: luminosity;
+
+}
+span{
+	color: #FF8C00;
+}
+.image{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./explosion.png');
+  mix-blend-mode: luminosity;
+  z-index: -1;
 }
 .text{
 	display: flex;
 	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
 	max-width: 50%;
-	padding: 25px;
+	padding: 15px;
 	gap: 2rem;
+}
+h1{
+	font-size: 3rem;
 }
 `;
 export const PageContent = styled.div`

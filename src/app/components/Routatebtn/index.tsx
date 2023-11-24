@@ -30,7 +30,8 @@ export const BtnContainer = styled.div`
  &:hover{
 	.arrow {
 		/* transform: rotate(-80deg); */
-		color: red;
+		color: #FF8C00;
+
 		margin-left: 25px;
 	}
 
@@ -52,7 +53,7 @@ export const BtnContainer = styled.div`
 
   .imagem {
     margin: auto;
-    animation: rotate 4s linear infinite;
+    animation: rotate 6s linear infinite;
     transform-origin: center center;
     width: 100%;
     height: 100%;

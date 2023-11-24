@@ -110,9 +110,10 @@ export const NavContainer = styled.nav`
   width: 100%;
   row-gap: 1rem;
    .actived {
-    color: black;
+	color: #FF8C00; 
+
   }
-	color: rgba(255, 215, 0, 0.5);
+	color: white;
 
   .navcontent {
 		background-color: rgba(255, 255, 255, 0.5);
@@ -134,7 +135,7 @@ export const NavContainer = styled.nav`
     }
   }
 	a{
-		color:darkorange;
+		color:white;
 	}
 
   @media (min-width: 1280px) {

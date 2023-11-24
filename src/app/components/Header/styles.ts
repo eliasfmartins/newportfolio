@@ -27,4 +27,16 @@ height: 60px;
 		font-size: 1.5rem;
 		color: white;
 	}
+	span{
+		font-weight: 700;
+		font-size: 2.5rem;
+
+	}
+	i{
+	color: #FF8C00;
+
+	}
+	h2{
+		font-weight: 200;
+	}
 `;
