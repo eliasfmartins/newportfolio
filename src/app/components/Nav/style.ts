@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import Link from 'next/link'
+import Link from 'next/link';
 export const LinkCotaniner = styled(Link)`
   display: flex;
   position: relative;
@@ -8,7 +8,7 @@ export const LinkCotaniner = styled(Link)`
   transition: all 3s;
  
   &:hover {
-    color: red;
+  
     visibility: visible;
     .group {
       visibility: visible;
@@ -50,7 +50,7 @@ export const LinkCotaniner = styled(Link)`
   }
   @media (min-width: 1280px) {
     &:hover {
-      color: red;
+  
       visibility: visible;
       .group {
         visibility: visible;
@@ -96,7 +96,7 @@ export const LinkCotaniner = styled(Link)`
       }
     }
   }
-`
+`;
 export const NavContainer = styled.nav`
   display: flex;
   flex-direction: column;
@@ -112,9 +112,10 @@ export const NavContainer = styled.nav`
    .actived {
     color: black;
   }
+	color: rgba(255, 215, 0, 0.5);
 
   .navcontent {
-    background-color: red;
+		background-color: rgba(255, 255, 255, 0.5);
     height: auto;
     display: flex;
     width: 100%;
@@ -124,6 +125,7 @@ export const NavContainer = styled.nav`
     padding: 2rem 1rem;
     font-size: 1.5rem;
     line-height: 2rem;
+		color: #fff;
   }
   @media (min-width: 768px) {
     .navcontent {
@@ -131,6 +133,9 @@ export const NavContainer = styled.nav`
       padding-right: 10rem;
     }
   }
+	a{
+		color:darkorange;
+	}
 
   @media (min-width: 1280px) {
     justify-content: center;
@@ -152,4 +157,4 @@ export const NavContainer = styled.nav`
       border-radius: 9999px;
     }
   }
-`
+`;
