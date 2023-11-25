@@ -53,6 +53,8 @@ export const ServicesContent = styled.div`
   max-width: 1200px;
 
   .services {
+	 margin-top: -60px;
+	 gap: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

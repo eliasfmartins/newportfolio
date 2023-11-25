@@ -64,7 +64,7 @@ export const ServiceSlider = () => {
 				},
 			}}
 				color='red'
-				slideBlankClass='red'
+
 				freeMode={true}
 				pagination={{
 					clickable: true
@@ -78,7 +78,10 @@ export const ServiceSlider = () => {
 					return (
 						<SwiperSlide key={index} >
 							<div className='layer'>
-								<div className='iconFirst'>{item.icon}</div>
+								<div className='iconFirst'><span>
+									{item.icon}
+								</span>
+								</div>
 								<div>
 									<div>{item.title}</div>
 									<div>{item.description}</div>
@@ -124,7 +127,7 @@ cursor: pointer;
 @media(max-width:601px){
 	.containerswipper{
 	margin: 0 auto;
-		height: 260px;
+		height: 280px;
 		margin-left: -50px;
 		width: 140%;
 
@@ -135,7 +138,7 @@ cursor: pointer;
 	font-size: 2rem;
  }
  .layer{
-	background:  rgba(65, 47, 123, 0.1);
+	background:  rgba(65, 47, 123, 0.3);
 	flex-direction: column;
 	justify-content: space-around;
 	padding: 10px;
