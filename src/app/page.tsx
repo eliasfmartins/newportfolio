@@ -47,7 +47,7 @@ export default function Home() {
 export const PageContainer = styled.main`
 	overflow: hidden;
 
-@media (max-width:900px){
+@media (max-width:1300px){
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -96,7 +96,7 @@ export const PageContainer = styled.main`
 `;
 export const PageContent = styled.div`
 overflow: hidden;
-@media (max-width:900px){
+@media (max-width:1300px){
 	width: 100%;
 	display: flex;
 	flex-direction: column;

@@ -16,6 +16,7 @@ import {
 } from 'react-icons/rx';
 
 import { FreeMode, Pagination } from 'swiper/modules';
+import styled from 'styled-components';
 
 const serviceData = [
 	{
@@ -48,43 +49,82 @@ const serviceData = [
 
 export const ServiceSlider = () => {
 	return (
-		<Swiper breakpoints={{
-			320: {
-				slidesPerView: 1,
-				spaceBetween: 15,
-			},
-			640: {
-				slidesPerView: 3,
-				spaceBetween: 15,
+		<SwipperContainer>
 
-			},
-		}}
-			freeMode={true}
-			pagination={{
+			<Swiper breakpoints={{
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 15,
+					autoHeight: true
+				},
+				640: {
+					slidesPerView: 3,
+					spaceBetween: 15,
 
-				clickable: true
+				},
 			}}
-			modules={[FreeMode, Pagination]}
-			style={{ height: 340 }}
-		>
+				color='red'
+				slideBlankClass='red'
+				freeMode={true}
+				pagination={{
+					clickable: true
+				}}
+				modules={[FreeMode, Pagination]}
+				className='containerswipper'
+			>
 
-			{
-				serviceData.map((item, index) => {
-					return <SwiperSlide key={index}>
-						<div>
-							<div>{item.icon}</div>
-							<div>
 
-								<div>{item.title}</div>
-								<div>{item.description}</div>
+				{serviceData.map((item, index) => {
+					return (
+						<SwiperSlide key={index} >
+							<div className='layer'>
+								<div className='iconFirst'>{item.icon}</div>
+								<div>
+									<div>{item.title}</div>
+									<div>{item.description}</div>
+								</div>
+								<div className='iconSwiper'>
+									<RxArrowTopRight />
+								</div>
 							</div>
-							<div>
-								<RxArrowTopRight />
-							</div>
-						</div>
-					</SwiperSlide>;
-				})
-			}
-		</Swiper>
+						</SwiperSlide>
+					);
+				})}
+			</Swiper>
+		</SwipperContainer>
 	);
 };
+export const SwipperContainer = styled.div`
+cursor: pointer;
+@media (max-width:600){
+	.containerswipper{
+		height: 340px;
+	
+	}
+	.layer{
+		align-items: center;
+		justify-content: center;
+		background: red;
+		gap: 0;
+	}
+}
+.iconFirst{
+	font-size: 3rem;
+}
+ .containerswipper{
+	height: 240px;
+ }
+ .iconSwiper{
+	font-size: 2rem;
+ }
+ .layer{
+	background:  rgba(65, 47, 123, 0.1);
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 10px;
+	height: 80%;
+	border-radius: 6px;
+	display: flex;
+  gap: 0.5rem;
+ }
+`;
