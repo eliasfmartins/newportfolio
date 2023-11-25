@@ -46,17 +46,21 @@ export default function Home() {
 }
 export const PageContainer = styled.main`
 .image{
-  background-image: url('./explosion.png');
-	mix-blend-mode: luminosity; 
-	width: 100vw;
-	height: 100vh;
-	background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-	position: absolute;
-	right: 0;
-	bottom: 0;
 }
+.image::before {
+    content: '';
+    background-image: url('./explosion.png');
+    mix-blend-mode: luminosity;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Garante que o pseudo-elemento está atrás do conteúdo */
+  }
 .text{
 	display: flex;
 	flex-direction: column;

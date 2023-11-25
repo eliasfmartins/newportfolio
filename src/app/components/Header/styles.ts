@@ -27,4 +27,7 @@ height: 60px;
 		font-size: 1.5rem;
 		color: white;
 	}
+	i{
+		color: #FF8C00;
+	}
 `;
