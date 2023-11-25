@@ -82,7 +82,6 @@ export default function About() {
 	return (
 		<AboutContainer>
 			<AboutContent>
-
 				<div className="about" >
 					<h2>Captivating <span>stories </span>
 						birth magnificent designs.</h2>
@@ -91,7 +90,7 @@ export default function About() {
 						<div className='count'>
 							<h2>
 
-								<CountUp start={0} end={10} duration={5} />+
+								<CountUp start={-5} end={2} duration={5} /> +
 							</h2>
 							YEARS OF <br />
 							EXPERIENCE
@@ -99,7 +98,7 @@ export default function About() {
 						<div className='count'>
 							<h2>
 
-								<CountUp start={0} end={10} duration={5} />+
+								<CountUp start={0} end={10} duration={5} /> +
 							</h2>
 							SATIFESCT <br />
 							CLIENTS
@@ -107,7 +106,7 @@ export default function About() {
 						<div className='count'>
 							<h2>
 
-								<CountUp start={0} end={10} duration={5} />+
+								<CountUp start={0} end={40} duration={5} /> +
 							</h2>
 							FINISHED <br />
 							PROJECTS
@@ -142,15 +141,20 @@ export default function About() {
 								<div>-</div>
 
 								<div className="icons">{item.stage}</div>
-								{item.icons?.map((icon, itemIndex) => {
-									return <div className='icon' key={itemIndex} >{icon}</div>;
-								})}
+								<div className='pao'>
+
+									{item.icons?.map((icon, itemIndex) => {
+										return <div className='icon' key={itemIndex} >{icon}</div>;
+									})}
+								</div>
 							</div>
 						);
 					})}
 
 
 				</div>
+
+
 
 			</AboutContent>
 		</AboutContainer >

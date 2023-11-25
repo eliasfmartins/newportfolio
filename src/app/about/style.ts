@@ -1,15 +1,31 @@
 import styled from 'styled-components';
 
 export const AboutContainer = styled.main`
-display: flex;
-align-items: center;
-justify-content: center;
+
+
+
 background-image: url('/public/site-bg.svg');
+width: 100%;
 `;
 export const AboutContent = styled.div`
-@media (max-width:900px){
+margin: 0 auto;
+@media (max-width:1300px){
 	display: flex;
 	flex-direction: column;
+	margin: 80px 0;
+	.container{
+		width: 95%;
+	}
+	.about{
+		width: 95%;
+	}
+	.counts{
+		width: 90%;
+		flex-wrap: wrap;
+		h2{
+			font-size: 2.5rem;
+		}
+	}
 }
  min-height: calc(100vh - 60px);
  height: 100%;
@@ -23,7 +39,6 @@ export const AboutContent = styled.div`
  .about{
 height: 100%;
 min-height: 400px;
-width: 50%;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -33,8 +48,8 @@ gap: 2rem;
 .container{
 height: 100%;
 gap: 2rem;
-min-height: 400px;
-width: 40%;
+min-height: 420px;
+min-width: 45%;
 padding: 20px;
 display: flex;
 align-items: center;
@@ -51,18 +66,23 @@ flex-direction: column;
 .aboutskill{
   display: flex;
   align-items: center;
-	/* font-weight: 700; */
 	color: lightgray;
   justify-content: space-between;
-
+  flex-wrap: wrap;
 	gap: 1rem;
 	width: 100%;
   position: relative;
 }
+.pao{
+	display: flex;
+	gap: 1rem;
+	height: auto;
+	width: 100%;
+	justify-content: space-evenly;
+}
 .icon{
 	display: flex;
 	font-size: 1.5rem;
-	justify-content: space-between;
 }
 .aboutData{
   padding: 5px;
@@ -128,7 +148,9 @@ flex-direction: column;
 	.count{
 		flex-direction: column;
 		gap: 0.5rem;
-		padding: 10px 25px 10px 10px;
+		padding: 10px 20px 10px 10px;
+		min-width: 150px;
+		/* background: red; */
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -137,7 +159,6 @@ flex-direction: column;
 		}
 		 border-right: 1px solid lightgray ;
 	}
-  
 
 
 `;

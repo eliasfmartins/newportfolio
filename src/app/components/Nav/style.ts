@@ -137,7 +137,7 @@ export const NavContainer = styled.nav`
 		color:#fff;
 	}
 
-  @media (min-width: 900px) {
+  @media (min-width: 1300px) {
     justify-content: center;
     row-gap: 1rem;
     right: 2%;
