@@ -49,7 +49,7 @@ const serviceData = [
 
 export const ServiceSlider = () => {
 	return (
-		<SwipperContainer>
+		<SwipperContainer className='container'>
 
 			<Swiper breakpoints={{
 				320: {
@@ -57,7 +57,7 @@ export const ServiceSlider = () => {
 					spaceBetween: 15,
 					autoHeight: true
 				},
-				640: {
+				600: {
 					slidesPerView: 3,
 					spaceBetween: 15,
 
@@ -99,21 +99,38 @@ cursor: pointer;
 @media (max-width:600){
 	.containerswipper{
 		height: 340px;
+		/* width: 400px; */
+		margin-left: -50px;
+		width: 140%;
 	
+	}
+	.container{
+		color: orange;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	.layer{
 		align-items: center;
 		justify-content: center;
-		background: red;
+		min-width: 400px;
+		width: 90%;
 		gap: 0;
 	}
 }
 .iconFirst{
 	font-size: 3rem;
 }
- .containerswipper{
-	height: 240px;
+@media(max-width:601px){
+	.containerswipper{
+	margin: 0 auto;
+		height: 260px;
+		margin-left: -50px;
+		width: 140%;
+
  }
+}
+ 
  .iconSwiper{
 	font-size: 2rem;
  }

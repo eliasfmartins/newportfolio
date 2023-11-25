@@ -29,40 +29,52 @@ export const ServicesContainer = styled.main`
 
 `;
 export const ServicesContent = styled.div`
-min-height: calc(100vh - 60px);
-@media (max-width:1200px){
-	flex-direction: column;
-	margin: 50px 0;
-	display: flex;
-	.services{
-		width: 90%;
-	}
-}
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: center;
-max-width: 1200px;
-.services{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 40%;
-	
-	height: 100%;
-	padding: 10px;
-}
-.slider{
+  min-height: calc(100vh - 60px);
 
-	width: 50%;
-	align-items: center;
-	justify-content: center;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 50px 0;
+    display: flex;
 
-}
-span{
-	color: #FF8C00;
-}
-h2{
-	font-size: 3rem;
-}
-`; 
+    .services {
+      width: 90%;
+    }
+
+    .slider {
+      width: 100%;
+    }
+  }
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 10px;
+
+    @media (min-width: 601px) {
+      width: 40%;
+    }
+  }
+
+  .slider {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span {
+    color: #FF8C00;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+`;
