@@ -24,7 +24,7 @@ const aboutData = [
 			},
 			{
 				title: 'UI/UX Design',
-				icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+				icons: [<FaFigma size={30} />, <SiAdobexd size={30} />, <SiAdobephotoshop size={30} />],
 			},
 		],
 	},
@@ -84,44 +84,71 @@ export default function About() {
 			<AboutContent>
 
 				<div className="about" >
-					<h2>Captivating</h2>
-					<p>Lorem ipsum dolor, sit <span>teste aqui</span>amet consectetur adipisicing elit. Deleniti tenetur, optio voluptatum mollitia autem neque ullam culpa repellendus dicta, qui nihil laborum! Itaque quo nam obcaecati totam expedita nihil aliquid!</p>
-					<div>
-						<CountUp start={0} end={10} duration={5} />
-						<CountUp start={0} end={1000} duration={5} style={{ color: 'red', fontWeight: 'bolder', fontSize: '2rem' }} />
+					<h2>Captivating <span>stories </span>
+						birth magnificent designs.</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti tenetur, optio voluptatum mollitia autem neque ullam culpa repellendus dicta, qui nihil laborum! Itaque quo nam obcaecati totam expedita nihil aliquid!</p>
+					<div className='counts'>
+						<div className='count'>
+							<h2>
+
+								<CountUp start={0} end={10} duration={5} />+
+							</h2>
+							YEARS OF <br />
+							EXPERIENCE
+						</div>
+						<div className='count'>
+							<h2>
+
+								<CountUp start={0} end={10} duration={5} />+
+							</h2>
+							SATIFESCT <br />
+							CLIENTS
+						</div>
+						<div className='count'>
+							<h2>
+
+								<CountUp start={0} end={10} duration={5} />+
+							</h2>
+							FINISHED <br />
+							PROJECTS
+						</div>
+						<div className='count'>
+							<h2>
+
+								<CountUp start={0} end={10} duration={5} />+
+							</h2>
+							WINNING <br />
+							AWARDS
+						</div>
 					</div>
-					<CountUp start={0} end={1000} duration={5} />
 				</div>
 				<div className="container">
-					<div>
-						<div className="skills">
-							{aboutData.map((item, itemIndex) => {
-								return (
-									<div key={itemIndex} onClick={() => setIndex(itemIndex)} className={index === itemIndex ? 'on' : 'defalt'}>
-										<h2>
-											{item.title}
-
-										</h2>
-									</div>
-								);
-							})}
-						</div>
-						<div>{aboutData[index].info.map((item, itemIndex) => {
+					<div className="skills">
+						{aboutData.map((item, itemIndex) => {
 							return (
-								<div key={itemIndex} className="aboutskill" >
-									<div >{item.title}</div>
-									<div>-</div>
-									<div className="icons">
+								<div key={itemIndex} onClick={() => setIndex(itemIndex)} className={index === itemIndex ? 'on' : 'defalt'}>
+									<h3>
+										{item.title}
 
-										<div className="icons">{item.stage}</div>
-										{item.icons?.map((icon, itemIndex) => {
-											return <div key={itemIndex} >{icon}</div>;
-										})}
-									</div>
+									</h3>
 								</div>
 							);
-						})}</div>
+						})}
 					</div>
+					{aboutData[index].info.map((item, itemIndex) => {
+						return (
+							<div key={itemIndex} className="aboutskill" >
+								<div >{item.title}</div>
+								<div>-</div>
+
+								<div className="icons">{item.stage}</div>
+								{item.icons?.map((icon, itemIndex) => {
+									return <div className='icon' key={itemIndex} >{icon}</div>;
+								})}
+							</div>
+						);
+					})}
+
 
 				</div>
 

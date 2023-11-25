@@ -12,11 +12,11 @@ flex-direction: column;
 	right: 100%;
 	height: 100vh;
 	z-index: 30;
-  background: gray;
+	background: #005567;
 	width: 100vw;
 }
 .second{
-  background: pink;
+	background: #004366;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -26,7 +26,7 @@ flex-direction: column;
 	width: 100vw;
 }
 .terceira{
-  background: purple;
+	background: #003366;
 	position: fixed;
 	top: 0;
 	bottom: 0;
