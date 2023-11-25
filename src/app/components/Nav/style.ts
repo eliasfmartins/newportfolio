@@ -48,7 +48,7 @@ export const LinkCotaniner = styled(Link)`
       visibility: visible;
     }
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1180px) {
     &:hover {
   
       visibility: visible;
@@ -137,7 +137,7 @@ export const NavContainer = styled.nav`
 		color:#fff;
 	}
 
-  @media (min-width: 1280px) {
+  @media (min-width: 900px) {
     justify-content: center;
     row-gap: 1rem;
     right: 2%;

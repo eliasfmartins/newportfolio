@@ -39,12 +39,32 @@ export default function Home() {
 				</div>
 				{/* sem background pra baguia com fundo ele q turou o background*/}
 				{/* mix color css como n sei */}
-				<div className='image'></div>
 			</PageContent>
+			<div className='image'></div>
 		</PageContainer>
 	);
 }
 export const PageContainer = styled.main`
+	overflow: hidden;
+
+@media (max-width:900px){
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	div.text{
+		width: 100%;
+		margin: 80px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 25px;
+	}
+	.image::before{
+		height: 100%;
+		/* z-index: 50; */
+	}
+}
 .image{
 }
 .image::before {
@@ -52,25 +72,44 @@ export const PageContainer = styled.main`
     background-image: url('./explosion.png');
     mix-blend-mode: luminosity;
     width: 100%;
-    height: 100%;
+		height: 100%;
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     z-index: -1; /* Garante que o pseudo-elemento está atrás do conteúdo */
   }
 .text{
+
 	display: flex;
 	flex-direction: column;
-	max-width: 50%;
+	justify-content: space-around;
+	min-height: calc(100vh - 60px);
+	height: 100%;
+
+	width: 50%;
 	padding: 25px;
 	gap: 2rem;
 }
 `;
 export const PageContent = styled.div`
+overflow: hidden;
+@media (max-width:900px){
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 	max-width: 1200px;
-	height: calc(100vh - 60px);
+	min-height: calc(100vh - 60px);
 	margin: 0 auto;
+	span{
+		color: #FF8C00;
+	}
+	h1{
+		font-size: 3rem;
+	}
 `;

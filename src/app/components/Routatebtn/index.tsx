@@ -18,13 +18,18 @@ export const RoutateBtn = () => {
 };
 
 export const BtnContainer = styled.div`
+@media (max-width:900px){
+	backdrop-filter: blur(2px); 
+}
+border-radius: 50%;
+border: solid white 1px;
   position: relative;
   width: 185px;
   height: 185px;
   display: flex;
   align-items: center;
   justify-content: center; /* Center horizontally */
-  background-image: url('/circle-star.svg');
+  /* background-image: url('/circle-star.svg'); */
   background-size: cover;
   background-position: center;
  &:hover{
@@ -52,7 +57,7 @@ export const BtnContainer = styled.div`
 
   .imagem {
     margin: auto;
-    animation: rotate 4s linear infinite;
+    animation: rotate 6s linear infinite;
     transform-origin: center center;
     width: 100%;
     height: 100%;

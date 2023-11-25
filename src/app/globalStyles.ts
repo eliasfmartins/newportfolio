@@ -13,9 +13,6 @@ export const GlobalStyles = createGlobalStyle`
     background-repeat: no-repeat;
     /* Adicione as propriedades abaixo para ocupar toda a altura da tela */
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
   }
  
