@@ -114,7 +114,7 @@ export default function About() {
 						<div className='count'>
 							<h2>
 
-								<CountUp start={0} end={10} duration={5} />+
+								<CountUp start={0} end={10} duration={5} /> +
 							</h2>
 							WINNING <br />
 							AWARDS

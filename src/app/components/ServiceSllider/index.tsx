@@ -52,16 +52,22 @@ export const ServiceSlider = () => {
 		<SwipperContainer className='container'>
 
 			<Swiper breakpoints={{
-				320: {
+				420: {
 					slidesPerView: 1,
 					spaceBetween: 15,
 					autoHeight: true
 				},
-				600: {
+				700: {
+					slidesPerView: 2,
+					spaceBetween: 15,
+
+				},
+				1000: {
 					slidesPerView: 3,
 					spaceBetween: 15,
 
 				},
+
 			}}
 				color='red'
 
@@ -101,7 +107,7 @@ export const SwipperContainer = styled.div`
 cursor: pointer;
 @media (max-width:600){
 	.containerswipper{
-		height: 340px;
+		height: 350px;
 		/* width: 400px; */
 		margin-left: -50px;
 		width: 140%;
@@ -118,6 +124,7 @@ cursor: pointer;
 		justify-content: center;
 		min-width: 400px;
 		width: 90%;
+		height: 80%;
 		gap: 0;
 	}
 }
