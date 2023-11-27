@@ -41,8 +41,16 @@ justify-content: baseline;
 	height: calc(100vh - 30vh);
 	justify-content:space-around;
 	flex-direction: column;
-	margin: 80px 0;
-	margin-bottom: 210px;
+	margin: 200px 0;
+	.container{
+		width: 90%;
+		justify-content:space-around;
+
+	}
+	
+}
+@media (max-width: 1200px){
+	margin: 250px 0;
 	.container{
 		width: 90%;
 		justify-content:space-around;
@@ -51,15 +59,16 @@ justify-content: baseline;
 	
 }
 @media (max-width: 800px){
-	margin-bottom: 150px;
+	margin: 150px 0;
+
 	.container{
 		width: 90%;
 	}
 
 }
 @media (max-width: 600px){
-	margin-top: 80px;
-	margin-bottom: 40px;
+	margin: 120px 0;
+
 
 
 }

@@ -99,13 +99,10 @@ export const SwipperCarrosel = styled.div`
 	margin-bottom: 40px;
 
 
-@media (max-width: 1000px){
+@media (max-width: 1200px){
 	margin-right: 0px;
-	margin-bottom: -30px;
 	width: 95%;
 	height: auto;
-	height:100%;
-	/* background:red; */
 	.swipperCarrolsel{
 		width: 100%;
 		height:100%;
@@ -114,14 +111,12 @@ export const SwipperCarrosel = styled.div`
 
 }
 @media (min-width: 1201px){
-	margin-right: 100px;
-	width: 65%;
+	width: 70%;
 	height: auto;
-	/* background:red; */
 	.swipperCarrolsel{
-		
-		width: 100%;
-		height:70%;
+		margin-right: 200px;
+		width: 90%;
+		height:100%;
 
 	}
 
@@ -149,7 +144,7 @@ export const SwipperCarrosel = styled.div`
     }
 		
 		.card {
-		max-width: 98%;
+		max-width: 99%;
 		height: auto;
 		margin-right: 2px;
 		border-radius: 8px;
@@ -161,7 +156,7 @@ export const SwipperCarrosel = styled.div`
 		}
 		}
 		.background {
-		width: 98%;
+		width: 99%;
 		border-radius: 8px;
 		height: 100%;
 		background: linear-gradient(to bottom, #FF8C00, #003366);
@@ -185,7 +180,7 @@ export const SwipperCarrosel = styled.div`
 	}
 
 	.card:hover .background {
-		height: 98%;
+		height: 99%;
 		opacity: 0.7;
 		transition: 0.3s;
 
