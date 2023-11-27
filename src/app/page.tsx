@@ -14,7 +14,7 @@ export default function Home() {
 				<TopLeftImg />
 				<div className='text'>
 					<h1>
-						Trasforming Ideas <br /> Into <span>Digital Reality</span>
+						Trasforming Ideas Into <span>Digital Reality</span>
 					</h1>
 					<motion.p
 						variants={fadeIn('down', 0.4)}
@@ -46,6 +46,9 @@ export default function Home() {
 }
 export const PageContainer = styled.main`
 	overflow: hidden;
+	display:flex;
+	height: 100%;
+	
 
 @media (max-width:1300px){
 	display: flex;
@@ -82,14 +85,13 @@ export const PageContainer = styled.main`
     z-index: -1; /* Garante que o pseudo-elemento está atrás do conteúdo */
   }
 .text{
-
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	min-height: calc(100vh - 60px);
+	justify-content: center;
 	height: 100%;
-
-	width: 50%;
+	min-height:60%;
+	gap: 4rem;
+	width: 65%;
 	padding: 25px;
 	gap: 2rem;
 }
