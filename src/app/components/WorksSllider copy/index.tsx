@@ -79,15 +79,11 @@ export const WorkSlider = () => {
 									{slide.images.map((img, index) => {
 										return (<div key={index} className='cardContainer'>
 											<div className='card'>
-
 												<div className="background">
-
-
 												</div>
 												<img src={img.path} className='card' />
 												<div className="text">Biscoito</div>
 											</div>
-
 										</div>);
 									})}
 								</div>
@@ -102,23 +98,47 @@ export const WorkSlider = () => {
 export const SwipperCarrosel = styled.div`
 	margin-bottom: 40px;
 
+
 @media (max-width: 1000px){
 	margin-right: 0px;
-
+	margin-bottom: -30px;
 	width: 95%;
-	height: 100%;
+	height: auto;
+	height:100%;
+	/* background:red; */
 	.swipperCarrolsel{
 		width: 100%;
+		height:100%;
 
 	}
 
 }
-	height: 73%;
+@media (min-width: 1201px){
+	margin-right: 100px;
+	width: 65%;
+	height: auto;
+	/* background:red; */
+	.swipperCarrolsel{
+		
+		width: 100%;
+		height:70%;
+
+	}
+
+}
+
+
+	height: 70%;
 	width: 60%;
 	margin-right: 25px;
 	.swipperCarrolsel{
-		height: 100%;
 		padding: 5px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content:center;
+		
+
 }
 .cards {
       display: grid;
@@ -144,7 +164,6 @@ export const SwipperCarrosel = styled.div`
 		width: 98%;
 		border-radius: 8px;
 		height: 100%;
-		/* background: linear-gradient(to bottom, #4CAF50, #2196F3); */
 		background: linear-gradient(to bottom, #FF8C00, #003366);
 		z-index: 50;
 		position: absolute;
@@ -168,7 +187,7 @@ export const SwipperCarrosel = styled.div`
 	.card:hover .background {
 		height: 98%;
 		opacity: 0.7;
-	transition: 0.3s;
+		transition: 0.3s;
 
 	}
 	.card:hover .text {
@@ -177,7 +196,7 @@ export const SwipperCarrosel = styled.div`
 		top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
-	transition: 0.3s;
+		transition: 0.3s;
 
 
 	}
