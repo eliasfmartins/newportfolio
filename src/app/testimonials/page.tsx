@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import { WorkSlider } from '../components/WorksSllider copy';
 
 
-export default function Work() {
+export default function TestimonialSlider() {
 	return (
-		<WorkContainer>
-			<WorkContent>
+		<TestimonialContainer>
+			<TestimonialContent>
 				<div className='container'>
 
 					<h2> My Works <span>.</span></h2>
@@ -15,11 +15,11 @@ export default function Work() {
 				</div>
 				<WorkSlider />
 
-			</WorkContent>
-		</WorkContainer>
+			</TestimonialContent>
+		</TestimonialContainer>
 	);
 }
-export const WorkContainer = styled.main`
+export const TestimonialContainer = styled.main`
 width: 100%;
 height:auto;
 display:flex;
@@ -30,7 +30,7 @@ height:100%;
 
 `;
 
-export const WorkContent = styled.div`
+export const TestimonialContent = styled.div`
 height: calc(100vh - 60px);
 display: flex;
 justify-content: baseline;
