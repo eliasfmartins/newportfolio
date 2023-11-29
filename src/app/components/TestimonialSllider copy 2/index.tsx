@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const testimonialData = [
 	{
@@ -29,7 +30,7 @@ const testimonialData = [
 ];
 
 
-import { Pagination } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
 
 // import { BsArrowRight } from 'react-icons/bs';
 import styled from 'styled-components';
@@ -40,12 +41,13 @@ export const TestimonialSlider = () => {
 		<SwipperCarrosel>
 
 			<Swiper
+				navigation={true}
 				spaceBetween={10}
 				freeMode={true}
 				pagination={{
 					clickable: true
 				}}
-				modules={[Pagination]}
+				modules={[Pagination, Navigation]}
 
 				className='swipperCarrolsel'
 			>
@@ -61,7 +63,7 @@ export const TestimonialSlider = () => {
 									<div>
 										<div>
 											{/*avatar*/}
-											<div className='foto'><Image src={person.image} alt="perfil image" width={80} height={80} className='foto' /></div>
+											<div className='foto'><Image src={person.image} alt="perfil image" width={100} height={100} className='foto' /></div>
 											<div>{person.name}</div>
 											<div>{person.position}</div>
 										</div>
@@ -82,8 +84,8 @@ export const TestimonialSlider = () => {
 export const SwipperCarrosel = styled.div`
 	margin-bottom: 40px;
 img.foto{
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
 }
 
