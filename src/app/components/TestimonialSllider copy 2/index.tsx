@@ -33,8 +33,9 @@ import { Pagination } from 'swiper/modules';
 
 // import { BsArrowRight } from 'react-icons/bs';
 import styled from 'styled-components';
-
-export const WorkSlider = () => {
+import { FaQuoteLeft } from 'react-icons/fa';
+import Image from 'next/image';
+export const TestimonialSlider = () => {
 	return (
 		<SwipperCarrosel>
 
@@ -60,8 +61,14 @@ export const WorkSlider = () => {
 									<div>
 										<div>
 											{/*avatar*/}
-											<div>avatar image</div>
+											<div className='foto'><Image src={person.image} alt="perfil image" width={80} height={80} className='foto' /></div>
+											<div>{person.name}</div>
+											<div>{person.position}</div>
 										</div>
+									</div>
+									<div>
+										<div><FaQuoteLeft /></div>
+										<div>{person.message}</div>
 									</div>
 								</div>
 							</SwiperSlide>
@@ -74,6 +81,11 @@ export const WorkSlider = () => {
 };
 export const SwipperCarrosel = styled.div`
 	margin-bottom: 40px;
+img.foto{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
 
 
 @media (max-width: 1200px){

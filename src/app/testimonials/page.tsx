@@ -1,19 +1,19 @@
 'use client';
 
 import styled from 'styled-components';
-import { WorkSlider } from '../components/WorksSllider copy';
+import { TestimonialSlider } from '../components/TestimonialSllider copy 2';
 
 
-export default function TestimonialSlider() {
+export default function Testimonials() {
 	return (
 		<TestimonialContainer>
 			<TestimonialContent>
 				<div className='container'>
 
-					<h2> My Works <span>.</span></h2>
+					<h2> What clients <span>say.</span></h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, atque quis. Nam aut illo corrupti earum illum ea ab omnis, id culpa sint dolorem consequatur quos animi, commodi iure ut.</p>
 				</div>
-				<WorkSlider />
+				<TestimonialSlider />
 
 			</TestimonialContent>
 		</TestimonialContainer>
