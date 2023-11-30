@@ -11,7 +11,7 @@ export default function Testimonials() {
 				<div className='container'>
 
 					<h2> What clients <span>say.</span></h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, atque quis. Nam aut illo corrupti earum illum ea ab omnis, id culpa sint dolorem consequatur quos animi, commodi iure ut.</p>
+
 				</div>
 				<TestimonialSlider />
 
@@ -33,7 +33,8 @@ height:100%;
 export const TestimonialContent = styled.div`
 height: calc(100vh - 60px);
 display: flex;
-justify-content: baseline;
+flex-direction: column;
+justify-content: center;
 
 
 
@@ -82,13 +83,6 @@ span{
 	max-width: 1200px;
 	display: flex;
 	align-items: center;
-.container{
-	display: flex;
-	gap: 4rem;
-	flex-direction: column;
-	min-width: 35%;
-	height: 50%;
-	margin-bottom: 50px;
-}
+
 
 `;
