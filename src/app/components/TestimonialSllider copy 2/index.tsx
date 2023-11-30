@@ -38,7 +38,7 @@ import { FaQuoteLeft } from 'react-icons/fa';
 import Image from 'next/image';
 export const TestimonialSlider = () => {
 	return (
-		<SwipperCarrosel>
+		<SwipperCarrosel className='carrolsel'>
 
 			<Swiper
 				navigation={true}
@@ -57,18 +57,18 @@ export const TestimonialSlider = () => {
 						return (
 
 							<SwiperSlide key={index}>
-								<div>
+								<div className='container'>
 									{/*avatar, name, position*/}
 
-									<div>
-										<div>
+									<div className='container'>
+										<div className='profile'>
 											{/*avatar*/}
 											<div className='foto'><Image src={person.image} alt="perfil image" width={100} height={100} className='foto' /></div>
 											<div>{person.name}</div>
 											<div>{person.position}</div>
 										</div>
 									</div>
-									<div>
+									<div className='citation'>
 										<div><FaQuoteLeft /></div>
 										<div>{person.message}</div>
 									</div>
@@ -82,7 +82,38 @@ export const TestimonialSlider = () => {
 	);
 };
 export const SwipperCarrosel = styled.div`
-	margin-bottom: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: red;
+.swipperCarrolsel{
+	background: #003366;
+	display: flex;
+	gap: 2rem;
+	width: 100%;
+}
+.container{
+	gap: 2rem;
+	display: flex;
+	align-items: center;
+}
+.citation{
+	padding: 25px;
+}
+.profile{
+	display: flex;
+	background: black;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 25px;
+}
+.carrolsel{
+	background-color: black;
+	width: 100%;
+
+}
 img.foto{
 	width: 100px;
 	height: 100px;
@@ -106,7 +137,7 @@ img.foto{
 	height: auto;
 	.swipperCarrolsel{
 		margin-right: 200px;
-		width: 90%;
+		/* width: 90%; */
 		height:100%;
 
 	}
