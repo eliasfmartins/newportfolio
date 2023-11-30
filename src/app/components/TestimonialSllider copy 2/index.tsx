@@ -34,7 +34,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 
 // import { BsArrowRight } from 'react-icons/bs';
 import styled from 'styled-components';
-import { FaQuoteLeft } from 'react-icons/fa';
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import Image from 'next/image';
 export const TestimonialSlider = () => {
 	return (
@@ -56,11 +56,11 @@ export const TestimonialSlider = () => {
 					testimonialData.map((person, index) => {
 						return (
 
-							<SwiperSlide key={index}>
+							<SwiperSlide key={index} className='pai'>
 								<div className='container'>
 									{/*avatar, name, position*/}
 
-									<div className='container'>
+									<div className=''>
 										<div className='profile'>
 											{/*avatar*/}
 											<div className='foto'><Image src={person.image} alt="perfil image" width={100} height={100} className='foto' /></div>
@@ -69,8 +69,9 @@ export const TestimonialSlider = () => {
 										</div>
 									</div>
 									<div className='citation'>
-										<div><FaQuoteLeft /></div>
+										<div className='icon1'><FaQuoteLeft size={30} /></div>
 										<div>{person.message}</div>
+										<div className='icon2'><FaQuoteRight size={30} /></div>
 									</div>
 								</div>
 							</SwiperSlide>
@@ -86,24 +87,38 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-background-color: red;
 .swipperCarrolsel{
-	background: #003366;
 	display: flex;
 	gap: 2rem;
 	width: 100%;
+}
+.pai{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.icon1{
+	display: flex;
+	justify-content: baseline;
+}
+.icon2{
+	display: flex;
+	justify-content: end;
 }
 .container{
 	gap: 2rem;
 	display: flex;
 	align-items: center;
+	width: 90%;
 }
 .citation{
+	display: flex;
+	flex-direction: column;
 	padding: 25px;
+	gap: 1rem;
 }
 .profile{
 	display: flex;
-	background: black;
 	flex-direction: column;
 	align-items: center;
 	gap: 0.5rem;
