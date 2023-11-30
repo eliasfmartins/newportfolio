@@ -59,7 +59,6 @@ export const TestimonialSlider = () => {
 							<SwiperSlide key={index} className='pai'>
 								<div className='container'>
 									{/*avatar, name, position*/}
-
 									<div className=''>
 										<div className='profile'>
 											{/*avatar*/}
@@ -68,6 +67,7 @@ export const TestimonialSlider = () => {
 											<div>{person.position}</div>
 										</div>
 									</div>
+									<div className='list'></div>
 									<div className='citation'>
 										<div className='icon1'><FaQuoteLeft size={30} /></div>
 										<div>{person.message}</div>
@@ -91,6 +91,12 @@ flex-direction: column;
 	display: flex;
 	gap: 2rem;
 	width: 100%;
+}
+.list{
+	height: 100%;
+	min-height: 180px;
+	width: 3px;
+	background: #f0f0f0;
 }
 .pai{
 	display: flex;
@@ -150,6 +156,9 @@ img.foto{
 @media (max-width: 600px){
 	.container{
 	flex-direction: column;
+}
+.list{
+	display: none;
 }
 }
 @media (min-width: 1201px){
