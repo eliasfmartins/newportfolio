@@ -143,9 +143,14 @@ img.foto{
 	.swipperCarrolsel{
 		width: 100%;
 		height:100%;
-
+		
 	}
-
+	
+}
+@media (max-width: 600px){
+	.container{
+	flex-direction: column;
+}
 }
 @media (min-width: 1201px){
 	width: 70%;
