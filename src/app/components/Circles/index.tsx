@@ -1,8 +1,34 @@
+import Image from 'next/image';
+import styled from 'styled-components';
+
 export const Circles = () => {
-	return <div
-	// w-200 xl w-300 absolute right-16 botton-2 mix-blend-color-dodge animate pulse duration  0.75s
-	>
-		{/* <Image src={'/'} width ={260} height ={200}/> w-full h-full */}
-		Circles
-	</div>;
+	return (
+		<ImageContainer>
+			<Image src={'/circles.png	'} width={260} height={200} alt='circle-img' />
+		</ImageContainer>);
 };
+export const ImageContainer = styled.div`
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	mix-blend-mode: color-dodge;
+	animation: pulse 2s linear infinite;
+	z-index: 10;
+
+	
+  @keyframes pulse {
+    0% {
+			opacity: 1;
+    }
+    50% {
+			opacity: 0.3;
+    }
+		100%{
+			opacity: 0.8;
+		}
+  }
+/* image{
+	animation: rotate 6s linear infinite;
+
+} */
+`;

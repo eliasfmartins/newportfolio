@@ -17,6 +17,7 @@ import {
 
 import { FreeMode, Pagination } from 'swiper/modules';
 import styled from 'styled-components';
+import { Circles } from '../Circles';
 
 const serviceData = [
 	{
@@ -100,6 +101,8 @@ export const ServiceSlider = () => {
 					);
 				})}
 			</Swiper>
+			<Circles />
+
 		</SwipperContainer>
 	);
 };

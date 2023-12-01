@@ -6,6 +6,7 @@ import motion from 'framer-motion';
 import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact, FaWordpress } from 'react-icons/fa';
 import { SiAdobephotoshop, SiAdobexd, SiFramer, SiNextdotjs } from 'react-icons/si';
 import { AboutContainer, AboutContent } from './style';
+import { Circles } from '../components/Circles';
 const aboutData = [
 	{
 		title: 'skills',
@@ -81,6 +82,8 @@ export default function About() {
 	//impoortar circle
 	return (
 		<AboutContainer>
+			<Circles />
+
 			<AboutContent>
 				<div className="about" >
 					<h2>Captivating <span>stories </span>

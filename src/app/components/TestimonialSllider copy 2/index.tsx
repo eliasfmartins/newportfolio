@@ -36,6 +36,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 import styled from 'styled-components';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import Image from 'next/image';
+import { Circles } from '../Circles';
 export const TestimonialSlider = () => {
 	return (
 		<SwipperCarrosel className='carrolsel'>
@@ -91,6 +92,8 @@ flex-direction: column;
 	display: flex;
 	gap: 2rem;
 	width: 100%;
+
+
 }
 .list{
 	height: 100%;
@@ -112,6 +115,8 @@ flex-direction: column;
 	justify-content: end;
 }
 .container{
+background:  rgba(47, 79, 123, 0.3);
+ border-radius: 8px;
 	gap: 2rem;
 	display: flex;
 	align-items: center;
@@ -154,7 +159,10 @@ img.foto{
 	
 }
 @media (max-width: 600px){
+
 	.container{
+	text-align: center;
+		
 	flex-direction: column;
 }
 .list{

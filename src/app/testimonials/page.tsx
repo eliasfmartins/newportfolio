@@ -2,11 +2,13 @@
 
 import styled from 'styled-components';
 import { TestimonialSlider } from '../components/TestimonialSllider copy 2';
+import { Circles } from '../components/Circles';
 
 
 export default function Testimonials() {
 	return (
 		<TestimonialContainer>
+			<Circles />
 			<TestimonialContent>
 				<div className='container'>
 
@@ -16,12 +18,13 @@ export default function Testimonials() {
 				<TestimonialSlider />
 
 			</TestimonialContent>
+
 		</TestimonialContainer>
 	);
 }
 export const TestimonialContainer = styled.main`
 width: 100%;
-height:auto;
+height:100%;
 display:flex;
 flex-direction:column;
 justify-content:space-around;
@@ -38,12 +41,15 @@ justify-content: center;
 
 
 
+
 @media (max-width: 1200px){
 	height: calc(100vh - 30vh);
 	justify-content:space-around;
 	flex-direction: column;
 	margin: 200px 0;
 	.container{
+	text-align: center;
+
 		width: 90%;
 		justify-content:space-around;
 
