@@ -88,11 +88,11 @@ export default function About() {
 			<Circles />
 			<Bulb />
 
-			<AboutContent as={motion.div} initial={'hidden'} exit={'hidden'} variants={fadeIn('up', (0.5))} animate={'show'}>
+			<AboutContent>
 
 
 
-				<div className="about" >
+				<motion.div className="about" initial={'hidden'} exit={'hidden'} variants={fadeIn('down', (0.5))} animate={'show'} >
 					<h2>Captivating <span>stories </span>
 						birth magnificent designs.</h2>
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti tenetur, optio voluptatum mollitia autem neque ullam culpa repellendus dicta, qui nihil laborum! Itaque quo nam obcaecati totam expedita nihil aliquid!</p>
@@ -130,8 +130,8 @@ export default function About() {
 							AWARDS
 						</div>
 					</div>
-				</div>
-				<div className="container">
+				</motion.div>
+				<motion.div className="container" initial={'hidden'} exit={'hidden'} variants={fadeIn('up', (0.5))} animate={'show'}>
 					<div className="skills">
 						{aboutData.map((item, itemIndex) => {
 							return (
@@ -162,7 +162,7 @@ export default function About() {
 					})}
 
 
-				</div>
+				</motion.div>
 
 
 

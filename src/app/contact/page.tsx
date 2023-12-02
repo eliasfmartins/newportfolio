@@ -2,10 +2,10 @@
 'use client';
 import styled from 'styled-components';
 import { Circles } from '../components/Circles';
-import { BsArrowRight, BsInstagram } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-import { FaGithub, FaLinkedin, FaMailBulk, FaVoicemail } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaMailBulk } from 'react-icons/fa';
 import { Bulb } from '../components/Bulb';
 
 export default function Contact() {
@@ -68,7 +68,7 @@ span{
 	display: flex;
 	border: solid 2px white;
 	padding: 15px;
-	border-radius: 25px;
+	border-radius: 50px;
 	width: 90%;
 	max-width: 600px;
 	display: flex;
@@ -76,6 +76,12 @@ span{
 	justify-content: center;
 	gap: 2rem;
 	font-size: 1.5rem;
+	transition: 0.3s;
+	&:hover{
+		scale: 1.03;
+		color: #FF8C00;
+		border:solid 2px #FF8C00;
+	}
 }
 
 `;

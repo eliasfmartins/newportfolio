@@ -54,6 +54,8 @@ import { Pagination } from 'swiper/modules';
 
 // import { BsArrowRight } from 'react-icons/bs';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/app/variants';
 
 export const WorkSlider = () => {
 	return (
@@ -67,7 +69,7 @@ export const WorkSlider = () => {
 				}}
 				modules={[Pagination]}
 
-				className='swipperCarrolsel'
+				className='swipperCarrolsel' 
 			>
 
 				{
