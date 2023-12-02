@@ -18,6 +18,7 @@ export default function Work() {
 					<h2> My Works <span>.</span></h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, atque quis. Nam aut illo corrupti earum illum ea ab omnis, id culpa sint dolorem consequatur quos animi, commodi iure ut.</p>
 				</motion.div>
+
 				<WorkSlider />
 
 			</WorkContent>
@@ -41,7 +42,6 @@ export const WorkContent = styled.div`
 height: calc(100vh - 60px);
 display: flex;
 justify-content: baseline;
-
 
 
 @media (max-width: 1200px){

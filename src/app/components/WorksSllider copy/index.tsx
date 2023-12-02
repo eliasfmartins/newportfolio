@@ -69,7 +69,7 @@ export const WorkSlider = () => {
 				}}
 				modules={[Pagination]}
 
-				className='swipperCarrolsel' 
+				className='swipperCarrolsel'
 			>
 
 				{
@@ -77,7 +77,7 @@ export const WorkSlider = () => {
 						return (
 
 							<SwiperSlide key={index}>
-								<div className='cards'>
+								<motion.div className='cards' variants={fadeIn('down', 0.5)} initial='hidden' animate='show' exit={'hidden'}>
 									{slide.images.map((img, index) => {
 										return (<div key={index} className='cardContainer'>
 											<div className='card'>
@@ -88,7 +88,7 @@ export const WorkSlider = () => {
 											</div>
 										</div>);
 									})}
-								</div>
+								</motion.div>
 							</SwiperSlide>
 						);
 					})
