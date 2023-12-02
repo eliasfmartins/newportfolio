@@ -2,12 +2,14 @@
 'use client';
 import { useState } from 'react';
 import CountUp from 'react-countup';
-import motion from 'framer-motion';
+import { motion } from 'framer-motion';
 import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact, FaWordpress } from 'react-icons/fa';
 import { SiAdobephotoshop, SiAdobexd, SiFramer, SiNextdotjs } from 'react-icons/si';
 import { AboutContainer, AboutContent } from './style';
 import { Circles } from '../components/Circles';
 import { Bulb } from '../components/Bulb';
+import { exit } from 'process';
+import { fadeIn } from '../variants';
 const aboutData = [
 	{
 		title: 'skills',
@@ -83,10 +85,12 @@ export default function About() {
 	//impoortar circle
 	return (
 		<AboutContainer>
+			<Circles />
+			<Bulb />
 
-			<AboutContent>
-				<Circles />
-				<Bulb />
+			<AboutContent as={motion.div} initial={'hidden'} exit={'hidden'} variants={fadeIn('up', (0.5))} animate={'show'}>
+
+
 
 				<div className="about" >
 					<h2>Captivating <span>stories </span>

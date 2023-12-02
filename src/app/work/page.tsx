@@ -75,6 +75,7 @@ justify-content: baseline;
 }
 @media (max-width: 600px){
 	margin: 120px 0;
+	text-align: center;
 
 
 
