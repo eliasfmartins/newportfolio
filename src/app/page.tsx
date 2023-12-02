@@ -5,6 +5,8 @@ import { fadeIn } from './variants';
 import styled from 'styled-components';
 import { RoutateBtn } from './components/Routatebtn';
 import { TopLeftImg } from './components/TopLeftImg';
+import { Circles } from './components/Circles';
+import { Bulb } from './components/Bulb';
 
 export default function Home() {
 	return (
@@ -41,6 +43,10 @@ export default function Home() {
 				{/* mix color css como n sei */}
 			</PageContent>
 			<div className='image'></div>
+			<Circles />
+			<Bulb />
+
+
 		</PageContainer>
 	);
 }

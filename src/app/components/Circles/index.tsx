@@ -8,12 +8,12 @@ export const Circles = () => {
 		</ImageContainer>);
 };
 export const ImageContainer = styled.div`
-	position: absolute;
+	position: fixed;
 	right: 0px;
-	bottom: 0px;
+	bottom: 0;
 	mix-blend-mode: color-dodge;
 	animation: pulse 2s linear infinite;
-	z-index: 10;
+	z-index:0 ;
 
 	
   @keyframes pulse {

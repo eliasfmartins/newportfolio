@@ -7,6 +7,7 @@ import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact, FaWordpress } from 'react-icon
 import { SiAdobephotoshop, SiAdobexd, SiFramer, SiNextdotjs } from 'react-icons/si';
 import { AboutContainer, AboutContent } from './style';
 import { Circles } from '../components/Circles';
+import { Bulb } from '../components/Bulb';
 const aboutData = [
 	{
 		title: 'skills',
@@ -82,9 +83,11 @@ export default function About() {
 	//impoortar circle
 	return (
 		<AboutContainer>
-			<Circles />
 
 			<AboutContent>
+				<Circles />
+				<Bulb />
+
 				<div className="about" >
 					<h2>Captivating <span>stories </span>
 						birth magnificent designs.</h2>

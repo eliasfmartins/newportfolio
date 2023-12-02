@@ -14,6 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     /* Adicione as propriedades abaixo para ocupar toda a altura da tela */
     min-height: 100vh;
     color: white;
+		z-index: 0;
   }
 	/* Estilização da barra de rolagem */
 ::-webkit-scrollbar {

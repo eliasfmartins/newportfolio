@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import { ServiceSlider } from '../components/ServiceSllider';
+import { Bulb } from '../components/Bulb';
 
 // import { ServiceSlider } from '../components/ServiceSllider';
 
@@ -21,7 +22,9 @@ export default function Services() {
 
 					<ServiceSlider />
 				</div>
+				<Bulb />
 			</ServicesContent>
+
 		</ServicesContainer>
 	);
 }

@@ -3,12 +3,15 @@
 import styled from 'styled-components';
 import { TestimonialSlider } from '../components/TestimonialSllider copy 2';
 import { Circles } from '../components/Circles';
+import { Bulb } from '../components/Bulb';
 
 
 export default function Testimonials() {
 	return (
 		<TestimonialContainer>
 			<Circles />
+			<Bulb />
+
 			<TestimonialContent>
 				<div className='container'>
 

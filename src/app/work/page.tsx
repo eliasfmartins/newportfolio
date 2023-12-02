@@ -2,20 +2,27 @@
 
 import styled from 'styled-components';
 import { WorkSlider } from '../components/WorksSllider copy';
+import { Circles } from '../components/Circles';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants';
+
 
 
 export default function Work() {
 	return (
 		<WorkContainer>
-			<WorkContent>
-				<div className='container'>
+			<WorkContent >
+				<motion.div className='container' variants={fadeIn('up', 0.5)} initial={'hidden'} animate={'show'} exit={'hidden'} >
+
 
 					<h2> My Works <span>.</span></h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, atque quis. Nam aut illo corrupti earum illum ea ab omnis, id culpa sint dolorem consequatur quos animi, commodi iure ut.</p>
-				</div>
+				</motion.div>
 				<WorkSlider />
 
 			</WorkContent>
+			<Circles />
+
 		</WorkContainer>
 	);
 }

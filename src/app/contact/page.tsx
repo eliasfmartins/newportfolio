@@ -6,21 +6,23 @@ import { BsArrowRight, BsInstagram } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { FaGithub, FaLinkedin, FaMailBulk, FaVoicemail } from 'react-icons/fa';
+import { Bulb } from '../components/Bulb';
 
 export default function Contact() {
 	return (
 
-		<ContactContainer as={motion.div} variants={fadeIn('up', 0.2)} initial='hidden' animate='show' exit={'hidden'}>
-			<motion.h2>Let's <span>connect.</span></motion.h2>
+		<ContactContainer>
+			<motion.h2 variants={fadeIn('up', 0.2)} initial='hidden' animate='show' exit={'hidden'}>Let's <span>connect.</span></motion.h2>
 			<div className='container'>
-				<div className='socials'>Linkedin <FaLinkedin size={40} /></div>
-				<div className='socials'>GitHub <FaGithub size={40} /></div>
-				<div className='socials'>E-mail <FaMailBulk size={40} /></div>
-				<div className='socials'>Instagran 	<BsInstagram size={40} /></div>
+				<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>Linkedin <FaLinkedin size={40} /></motion.div>
+				<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>GitHub <FaGithub size={40} /></motion.div>
+				<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>E-mail <FaMailBulk size={40} /></motion.div>
+				<motion.div className='socials' initial='hidden' animate='show' exit={'hidden'}>Instagran 	<BsInstagram size={40} /></motion.div>
+				<Circles />
+				<Bulb />
 			</div>
-			<Circles />
 
-		</ContactContainer>
+		</ContactContainer >
 	);
 }
 export const ContactContainer = styled.main`
