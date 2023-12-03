@@ -12,8 +12,8 @@ export default function Testimonials() {
 		<TestimonialContainer>
 			<Circles />
 			<Bulb />
-			<TopLeftImg/>
-			
+			<TopLeftImg />
+
 
 			<TestimonialContent>
 				<div className='container'>
@@ -42,8 +42,11 @@ height:100%;
 export const TestimonialContent = styled.div`
 height: calc(100vh - 60px);
 display: flex;
+gap: 3rem;
 flex-direction: column;
 justify-content: center;
+z-index: 10;
+
 
 
 
@@ -80,7 +83,8 @@ justify-content: center;
 
 }
 @media (max-width: 600px){
-	margin: 120px 0;
+	margin-top: 100px;
+	margin-bottom: 160px;
 
 
 

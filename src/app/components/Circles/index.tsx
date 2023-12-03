@@ -13,7 +13,7 @@ export const ImageContainer = styled.div`
 	bottom: 0;
 	mix-blend-mode: color-dodge;
 	animation: pulse 2s linear infinite;
-	z-index:0 ;
+	z-index:1 ;
 
 	
   @keyframes pulse {

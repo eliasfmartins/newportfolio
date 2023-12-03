@@ -16,7 +16,7 @@ export default function Home() {
 				<TopLeftImg />
 				<div className='text'>
 					<h1>
-					Transformando Ideias em <span>Realidade Digital</span>
+						Welcome to my  <span>portfolio</span>
 					</h1>
 					<motion.p
 						variants={fadeIn('down', 0.4)}
@@ -24,10 +24,7 @@ export default function Home() {
 						animate="show"
 						exit="hidden"
 					>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-						veritatis nesciunt cumque ipsam commodi corrupti eius incidunt. Nam
-						voluptates dolorem totam ullam soluta vel? Expedita aut sed nobis
-						neque commodi!
+						Bem-vindo ao meu portfólio! Aqui, você terá a oportunidade de explorar quem eu sou, minhas habilidades, conhecimentos e projetos.Sinta-se à vontade para explorar e fazer parte desta jornada comigo
 					</motion.p>
 					<motion.div
 						variants={fadeIn('down', 0.4)}
@@ -39,7 +36,7 @@ export default function Home() {
 						<RoutateBtn />
 					</motion.div>
 				</div>
-			
+
 			</PageContent>
 			<div className='image'></div>
 			<Circles />

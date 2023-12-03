@@ -50,20 +50,20 @@ const aboutData = [
 		title: 'credenciais',
 		info: [
 			{
-				title: 'Sistemas da Informação - Faculdade Estácio-Sa',
-				stage: 'cursando',
+				title: 'Sistemas da Informação - Faculdade Estácio-Sa - Cursando',
+				// stage: 'cursando',
 			},
 			{
-				title: 'Curso de JavaScript e TypeScript Básico ao Avançado - Udemy',
-				stage: 'cursando',
+				title: 'Curso de JavaScript e TypeScript Básico ao Avançado - Udemy - Cursando',
+				// stage: 'cursando',
 			},
 			{
-				title: 'Curso de React.JS e Next.JS- Udemy',
-				stage: 'cursando',
+				title: 'Curso de React.JS e Next.JS- Udemy - Cursando',
+				// stage: '',
 			},
 			{
-				title: 'Curso de Python Básico ao Avançado - Udemy',
-				stage: 'cursando',
+				title: 'Curso de Python Básico ao Avançado - Udemy - Cursando',
+				// stage: 'cursando',
 			},
 			// {
 			// 	title: 'Curso de Django Web Framework e Django Rest Framework (DRF) - Udemy',
@@ -85,7 +85,7 @@ export default function About() {
 
 
 				<motion.div className="about" initial={'hidden'} exit={'hidden'} variants={fadeIn('down', (0.5))} animate={'show'} >
-					<h2>About <span>me . </span></h2>
+					<h2>Sobre <span>mim. </span></h2>
 					<p>Estudante de Sistemas da Informação
 						apaixonado por desenvolvimento web e com foco em front-end, onde
 						possuo habilidades sólidas em TypeScript, React e Next.js. Além disso,

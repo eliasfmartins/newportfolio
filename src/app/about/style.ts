@@ -50,10 +50,12 @@ margin: 0 auto;
  align-items: center;
  justify-content: center;
  .about{
+padding: 5px;
 height: 100%;
 min-height: 400px;
 display: flex;
 flex-direction: column;
+text-align: justify;
 /* align-items: center; */
 gap: 2rem;
 }

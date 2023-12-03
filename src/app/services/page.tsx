@@ -22,7 +22,7 @@ export default function Services() {
 				<motion.div className='services' initial={'hidden'} exit={'hidden'} variants={fadeIn('up', (0.5))} animate={'show'}>
 
 					<h2>My Services <span>.</span></h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, atque quis. Nam aut illo corrupti earum illum ea ab omnis, id culpa sint dolorem consequatur quos animi, commodi iure ut.</p>
+					<p>Bem-vindo à minha página de serviços! Como web developer, estou aqui para oferecer soluções que impulsionam a presença online e a experiência do usuário. Explore abaixo alguns dos serviços que presto:</p>
 				</motion.div>
 				<motion.div className='slider' initial={'hidden'} exit={'hidden'} variants={fadeIn('down', (0.5))} animate={'show'}>
 

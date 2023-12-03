@@ -22,27 +22,27 @@ const serviceData = [
 	{
 		icon: <RxCrop />,
 		title: 'Branding',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		description: 'No branding, dou personalidade às marcas.',
 	},
 	{
 		icon: <RxPencil2 />,
 		title: 'Design',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		description: 'No design, dou vida às ideias através da harmonia visual.',
 	},
 	{
 		icon: <RxDesktop />,
 		title: 'Development',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		description: 'No desenvolvimento web, transformo visões em realidade digital.',
 	},
 	{
 		icon: <RxReader />,
 		title: 'Copywriting',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		description: 'Como copywriter, transformo palavras em narrativas envolventes. ',
 	},
 	{
 		icon: <RxRocket />,
 		title: 'SEO',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		description: ' guio conteúdos para as alturas dos motores de busca. ',
 	},
 ];
 

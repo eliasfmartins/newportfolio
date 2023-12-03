@@ -14,7 +14,7 @@ export const ContainerBulb = styled.div`
 
 	mix-blend-mode: color-dodge;
 	animation: pulse 4s linear infinite;
-	z-index: 10;
+	z-index: 1;
 
 
 

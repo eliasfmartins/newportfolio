@@ -46,7 +46,7 @@ export const WorkContent = styled.div`
 height: calc(100vh - 60px);
 display: flex;
 justify-content: baseline;
-
+z-index:10;
 
 @media (max-width: 1200px){
 	height: calc(100vh - 30vh);

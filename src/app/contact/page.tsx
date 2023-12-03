@@ -17,7 +17,7 @@ export default function Contact() {
 				<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>Linkedin <FaLinkedin size={40} /></motion.div>
 				<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>GitHub <FaGithub size={40} /></motion.div>
 				<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>E-mail <FaMailBulk size={40} /></motion.div>
-				<motion.div className='socials' initial='hidden' animate='show' exit={'hidden'}>Instagran 	<BsInstagram size={40} /></motion.div>
+				<motion.div className='socials' initial='hidden' animate='show' exit={'hidden'}>Instagram	<BsInstagram size={40} /></motion.div>
 				<Circles />
 				<Bulb />
 			</div>
@@ -38,8 +38,7 @@ export const ContactContainer = styled.main`
 		margin-bottom: 150px ;
 	}
 	@media(max-width:600px){
-		margin-top: 100px ;
-		margin-bottom: 150px ;
+		margin-top: 50px ;
 	}
 h2{
 	text-align: center;
@@ -77,6 +76,8 @@ span{
 	gap: 2rem;
 	font-size: 1.5rem;
 	transition: 0.3s;
+	z-index: 10;
+
 	&:hover{
 		scale: 1.03;
 		color: #FF8C00;
