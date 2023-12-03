@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import CountUp from 'react-countup';
 import { motion } from 'framer-motion';
-import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact, FaWordpress } from 'react-icons/fa';
-import { SiAdobephotoshop, SiAdobexd, SiFramer, SiNextdotjs } from 'react-icons/si';
+import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact, FaPython } from 'react-icons/fa';
+import { SiFramer, SiNextdotjs } from 'react-icons/si';
 import { AboutContainer, AboutContent } from './style';
 import { Circles } from '../components/Circles';
 import { Bulb } from '../components/Bulb';
@@ -14,7 +14,7 @@ const aboutData = [
 		title: 'skills',
 		info: [
 			{
-				title: 'Web Development',
+				title: 'Front-end Development',
 				icons: [
 					<FaHtml5 size={30} />,
 					<FaCss3 size={30} />,
@@ -25,8 +25,12 @@ const aboutData = [
 				],
 			},
 			{
+				title: 'back-end Development',
+				icons: [<FaPython size={30} />],
+			},
+			{
 				title: 'UI/UX Design',
-				icons: [<FaFigma size={30} />, <SiAdobexd size={30} />, <SiAdobephotoshop size={30} />],
+				icons: [<FaFigma size={30} />],
 			},
 		],
 	},
@@ -48,7 +52,7 @@ const aboutData = [
 		info: [
 			{
 				title: 'UX/UI Designer - XYZ Company',
-				stage: '2012 - 2023',
+				stage: '2023 - current',
 			},
 			{
 				title: 'Web Developer - ABC Agency',
