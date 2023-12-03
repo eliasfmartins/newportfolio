@@ -15,9 +15,12 @@ export default function Home() {
 
 				<TopLeftImg />
 				<div className='text'>
-					<h1>
+					<motion.h1 variants={fadeIn('up', 0.4)}
+						initial="hidden"
+						animate="show"
+						exit="hidden">
 						Welcome to my  <span>portfolio</span>
-					</h1>
+					</motion.h1>
 					<motion.p
 						variants={fadeIn('down', 0.4)}
 						initial="hidden"
