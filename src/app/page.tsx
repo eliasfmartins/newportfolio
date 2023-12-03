@@ -39,8 +39,7 @@ export default function Home() {
 						<RoutateBtn />
 					</motion.div>
 				</div>
-				{/* sem background pra baguia com fundo ele q turou o background*/}
-				{/* mix color css como n sei */}
+			
 			</PageContent>
 			<div className='image'></div>
 			<Circles />
@@ -63,7 +62,7 @@ export const PageContainer = styled.main`
 	align-items: center;
 	div.text{
 		width: 100%;
-		margin: 80px 0;
+		margin-bottom: 80px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

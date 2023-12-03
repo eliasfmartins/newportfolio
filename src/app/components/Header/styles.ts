@@ -3,16 +3,21 @@ import styled from 'styled-components';
 export const HeaderContainer = styled.header`
 	`;
 export const HeaderContent = styled.div`
+	padding: 0 2rem;
+	gap: 2rem;
+	height: 60px;
 @media (max-width:700px){
 	flex-direction: column;
 	align-items: center;
-	gap: 2rem;
+	padding: 2rem 0;
+	gap: 0rem;
+	height: auto;
+
+
 }
-height: 60px;
 	margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  padding: 0 2rem;
 	font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -22,7 +27,7 @@ height: 60px;
 		align-items: center;
 		justify-content: center;
 		height: 4rem;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 	a{
 		display: flex;

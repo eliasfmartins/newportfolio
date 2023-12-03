@@ -8,7 +8,7 @@ import {
 	HiChatBubbleBottomCenterText,
 	HiEnvelope,
 } from 'react-icons/hi2';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname} from 'next/navigation';
 import { LinkCotaniner, NavContainer } from './style';
 export const navData = [
 	{ name: 'home', path: '/', icon: <HiHome /> },

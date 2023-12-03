@@ -8,7 +8,6 @@ import { SiAdobephotoshop, SiAdobexd, SiFramer, SiNextdotjs } from 'react-icons/
 import { AboutContainer, AboutContent } from './style';
 import { Circles } from '../components/Circles';
 import { Bulb } from '../components/Bulb';
-import { exit } from 'process';
 import { fadeIn } from '../variants';
 const aboutData = [
 	{
@@ -23,7 +22,6 @@ const aboutData = [
 					<FaReact size={30} />,
 					<SiNextdotjs size={30} />,
 					<SiFramer size={30} />,
-					<FaWordpress size={30} />,
 				],
 			},
 			{
@@ -93,9 +91,18 @@ export default function About() {
 
 
 				<motion.div className="about" initial={'hidden'} exit={'hidden'} variants={fadeIn('down', (0.5))} animate={'show'} >
-					<h2>Captivating <span>stories </span>
-						birth magnificent designs.</h2>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti tenetur, optio voluptatum mollitia autem neque ullam culpa repellendus dicta, qui nihil laborum! Itaque quo nam obcaecati totam expedita nihil aliquid!</p>
+					<h2>About <span>me . </span></h2>
+					<p>Estudante de Sistemas da Informação
+						apaixonado por desenvolvimento web e com foco em front-end, onde
+						possuo habilidades sólidas em TypeScript, React e Next.js. Além disso,
+						estou em constante aprendizado, explorando Python com Django e
+						Node.js para o desenvolvimento back-end. Atualmente, estou adquirindo
+						experiência como estagiário de desenvolvimento front-end na Defensoria
+						Pública do Distrito Federal, onde aprimoro minhas habilidades diariamente.
+						Estou ansioso para iniciar minha carreira como desenvolvedor júnior ou
+						trainee, e estou aberto a oportunidades que me permitam crescer e
+						contribuir ativamente para projetos desafiadores
+					</p>
 					<div className='counts'>
 						<div className='count'>
 							<h2>

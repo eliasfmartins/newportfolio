@@ -10,6 +10,7 @@ export const Header = () => {
 	return (
 		<HeaderContainer className={Bruno.className}>
 			<HeaderContent>
+
 				<h2>
 					<span>{'<Elias />'} </span> martins <i>.</i>
 				</h2>
@@ -19,7 +20,7 @@ export const Header = () => {
 						target="_blank"
 						href={'https://www.instagram.com/eliasf.martins/'}
 					>
-						<BsInstagram />
+						<BsInstagram size={30} />
 					</Link>
 
 					<Link
@@ -27,14 +28,14 @@ export const Header = () => {
 						target="_blank"
 						href={'https://www.instagram.com/eliasf.martins/'}
 					>
-						<FaLinkedin />
+						<FaLinkedin size={30} />
 					</Link>
 					<Link
 						//facebook sla  e github
 						target="_blank"
 						href={'https://www.instagram.com/eliasf.martins/'}
 					>
-						<FaGithub />
+						<FaGithub size={30} />
 					</Link>
 				</nav>
 			</HeaderContent>
