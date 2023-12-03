@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { TestimonialSlider } from '../components/TestimonialSllider copy 2';
 import { Circles } from '../components/Circles';
 import { Bulb } from '../components/Bulb';
+import { TopLeftImg } from '../components/TopLeftImg';
 
 
 export default function Testimonials() {
@@ -11,6 +12,8 @@ export default function Testimonials() {
 		<TestimonialContainer>
 			<Circles />
 			<Bulb />
+			<TopLeftImg/>
+			
 
 			<TestimonialContent>
 				<div className='container'>

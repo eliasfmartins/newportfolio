@@ -16,7 +16,7 @@ export default function Home() {
 				<TopLeftImg />
 				<div className='text'>
 					<h1>
-						Trasforming Ideas Into <span>Digital Reality</span>
+					Transformando Ideias em <span>Realidade Digital</span>
 					</h1>
 					<motion.p
 						variants={fadeIn('down', 0.4)}

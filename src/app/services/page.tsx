@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { Bulb } from '../components/Bulb';
 import { fadeIn } from '../variants';
 import { Circles } from '../components/Circles';
+import { TopLeftImg } from '../components/TopLeftImg';
 
 // import { ServiceSlider } from '../components/ServiceSllider';
 
@@ -14,6 +15,8 @@ import { Circles } from '../components/Circles';
 export default function Services() {
 	return (
 		<ServicesContainer>
+			<TopLeftImg/>
+			<Bulb />
 			<ServicesContent>
 
 				<motion.div className='services' initial={'hidden'} exit={'hidden'} variants={fadeIn('up', (0.5))} animate={'show'}>

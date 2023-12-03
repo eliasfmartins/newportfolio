@@ -3,15 +3,16 @@
 import { useState } from 'react';
 import CountUp from 'react-countup';
 import { motion } from 'framer-motion';
-import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact, FaPython } from 'react-icons/fa';
+import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact, FaPython, FaNodeJs } from 'react-icons/fa';
 import { SiFramer, SiNextdotjs } from 'react-icons/si';
 import { AboutContainer, AboutContent } from './style';
 import { Circles } from '../components/Circles';
 import { Bulb } from '../components/Bulb';
 import { fadeIn } from '../variants';
+import { TopLeftImg } from '../components/TopLeftImg';
 const aboutData = [
 	{
-		title: 'skills',
+		title: 'habilidades',
 		info: [
 			{
 				title: 'Front-end Development',
@@ -26,7 +27,7 @@ const aboutData = [
 			},
 			{
 				title: 'back-end Development',
-				icons: [<FaPython size={30} />],
+				icons: [<FaPython size={30} />, <FaNodeJs size={30} />],
 			},
 			{
 				title: 'UI/UX Design',
@@ -34,61 +35,50 @@ const aboutData = [
 			},
 		],
 	},
+	
 	{
-		title: 'awards',
+		title: 'experiência',
 		info: [
 			{
-				title: 'Webby Awards - Honoree',
-				stage: '2011 - 2012',
+				title: 'Desenvolvedor Full Stack - Defensoria Pública do DF',
+				stage: '2023 - atual',
 			},
-			{
-				title: 'Adobe Design Achievement Awards - Finalist',
-				stage: '2009 - 2010',
-			},
+
 		],
 	},
 	{
-		title: 'experience',
+		title: 'credenciais',
 		info: [
 			{
-				title: 'UX/UI Designer - XYZ Company',
-				stage: '2023 - current',
+				title: 'Sistemas da Informação - Faculdade Estácio-Sa',
+				stage: 'cursando',
 			},
 			{
-				title: 'Web Developer - ABC Agency',
-				stage: '2010 - 2012',
+				title: 'Curso de JavaScript e TypeScript Básico ao Avançado - Udemy',
+				stage: 'cursando',
 			},
 			{
-				title: 'Intern - DEF Corporation',
-				stage: '2008 - 2010',
-			},
-		],
-	},
-	{
-		title: 'credentials',
-		info: [
-			{
-				title: 'Web Development - ABC University, LA, CA',
-				stage: '2011',
+				title: 'Curso de React.JS e Next.JS- Udemy',
+				stage: 'cursando',
 			},
 			{
-				title: 'Computer Science Diploma - AV Technical Institute',
-				stage: '2009',
+				title: 'Curso de Python Básico ao Avançado - Udemy',
+				stage: 'cursando',
 			},
-			{
-				title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-				stage: '2006',
-			},
+			// {
+			// 	title: 'Curso de Django Web Framework e Django Rest Framework (DRF) - Udemy',
+			// 	stage: 'cursando',
+			// },
 		],
 	},
 ];
 export default function About() {
 	const [index, setIndex] = useState(0);
-	//impoortar circle
 	return (
 		<AboutContainer>
-			<Circles />
+			<TopLeftImg/>
 			<Bulb />
+			<Circles />
 
 			<AboutContent>
 
@@ -111,35 +101,28 @@ export default function About() {
 						<div className='count'>
 							<h2>
 
-								<CountUp start={-5} end={2} duration={5} /> +
+								<CountUp start={-5} end={2} duration={6} /> +
 							</h2>
-							YEARS OF <br />
-							EXPERIENCE
+							ANOS DE <br />
+							EXPERIENCIA
 						</div>
 						<div className='count'>
 							<h2>
 
-								<CountUp start={0} end={10} duration={5} /> +
+								<CountUp start={0} end={10} duration={8} /> +
 							</h2>
-							SATIFESCT <br />
-							CLIENTS
+							CLIENTES <br />
+							SATISFEITOS
 						</div>
 						<div className='count'>
 							<h2>
 
-								<CountUp start={0} end={40} duration={5} /> +
+								<CountUp start={0} end={40} duration={7} /> +
 							</h2>
-							FINISHED <br />
-							PROJECTS
+							PROJETOS <br />
+							FINALIZADOS
 						</div>
-						<div className='count'>
-							<h2>
-
-								<CountUp start={0} end={10} duration={5} /> +
-							</h2>
-							WINNING <br />
-							AWARDS
-						</div>
+						
 					</div>
 				</motion.div>
 				<motion.div className="container" initial={'hidden'} exit={'hidden'} variants={fadeIn('up', (0.5))} animate={'show'}>
@@ -159,7 +142,6 @@ export default function About() {
 						return (
 							<div key={itemIndex} className="aboutskill" >
 								<div >{item.title}</div>
-								<div>-</div>
 
 								<div className="icons">{item.stage}</div>
 								<div className='pao'>

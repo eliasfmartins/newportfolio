@@ -15,7 +15,7 @@ position: absolute;
 	left: 0;
 	top: 0;
 	mix-blend-mode: lighten;
-	z-index: 10;
+	z-index: 1;
 @media (max-width:800px){
 	width: 200px;
 

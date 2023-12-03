@@ -5,12 +5,16 @@ import { WorkSlider } from '../components/WorksSllider copy';
 import { Circles } from '../components/Circles';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import { Bulb } from '../components/Bulb';
+import { TopLeftImg } from '../components/TopLeftImg';
 
 
 
 export default function Work() {
 	return (
 		<WorkContainer>
+			<TopLeftImg/>
+			<Bulb />
 			<WorkContent >
 				<motion.div className='container' variants={fadeIn('up', 0.5)} initial={'hidden'} animate={'show'} exit={'hidden'} >
 

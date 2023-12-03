@@ -27,6 +27,19 @@ margin: 0 auto;
 		}
 	}
 }
+@media (max-width:600px){
+	padding: 0;
+
+	.container{
+		width: 
+		100%;
+		font-size: auto;
+		transition: 0.3s;
+		h3{
+			font-size: 1rem;
+		}
+	}
+}
  min-height: calc(100vh - 60px);
  height: 100%;
  gap: 2rem;
@@ -75,10 +88,11 @@ flex-direction: column;
 }
 .pao{
 	display: flex;
-	gap: 1rem;
+	gap: 2rem;
+	color: white;
 	height: auto;
 	width: 100%;
-	justify-content: space-evenly;
+	justify-content: baseline;
 }
 .icon{
 	display: flex;
@@ -92,7 +106,6 @@ flex-direction: column;
 
 .icons{
   display: flex;
-	color: white;
 	font-size: 1rem;
 }
 
