@@ -69,14 +69,14 @@ export const ServiceSlider = () => {
 				},
 
 			}}
-				color='red'
+			color='red'
 
-				freeMode={true}
-				pagination={{
-					clickable: true
-				}}
-				modules={[FreeMode, Pagination]}
-				className='containerswipper'
+			freeMode={true}
+			pagination={{
+				clickable: true
+			}}
+			modules={[FreeMode, Pagination]}
+			className='containerswipper'
 			>
 
 

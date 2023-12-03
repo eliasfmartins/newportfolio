@@ -13,14 +13,14 @@ import { TopLeftImg } from '../components/TopLeftImg';
 export default function Work() {
 	return (
 		<WorkContainer>
-			<TopLeftImg/>
+			<TopLeftImg />
 			<Bulb />
 			<WorkContent >
 				<motion.div className='container' variants={fadeIn('up', 0.5)} initial={'hidden'} animate={'show'} exit={'hidden'} >
 
 
 					<h2> My Works <span>.</span></h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, atque quis. Nam aut illo corrupti earum illum ea ab omnis, id culpa sint dolorem consequatur quos animi, commodi iure ut.</p>
+					<p> Explore alguns dos meus projetos recentes aqui. Dê uma olhada nos códigos-fonte, veja como eles funcionam e descubra o processo por trás de cada solução criativa. Estou animado para compartilhar meu trabalho e as histórias por trás de cada projeto. Se houver algo que chame sua atenção, não hesite em entrar em contato para discutirmos mais detalhes!</p>
 				</motion.div>
 
 				<WorkSlider />
@@ -99,7 +99,9 @@ span{
 	gap: 4rem;
 	flex-direction: column;
 	min-width: 35%;
+	padding: 0 20px;
 	height: 50%;
+	text-align: justify;
 	margin-bottom: 50px;
 }
 

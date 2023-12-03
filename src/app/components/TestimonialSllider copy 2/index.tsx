@@ -7,25 +7,32 @@ import 'swiper/css/navigation';
 
 const testimonialData = [
 	{
-		image: '/t-avt-1.png',
-		name: 'Anne Smith',
-		position: 'Customer',
+		image: '/gabriel.jpg',
+		name: 'Grabriel G',
+		position: 'Full Stack',
 		message:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+			'Trabalhar com Elias como desenvolvedor web foi uma experiência incrível. Sua atenção aos detalhes e dedicação para entregar produtos de alta qualidade são evidentes em cada projeto. Sem dúvida, um profissional excepcional.',
 	},
 	{
-		image: '/t-avt-2.png',
-		name: 'Jane Doe',
-		position: 'Customer',
+		image: '/max.jpg',
+		name: 'Maxwell',
+		position: 'Full Stack',
 		message:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+			'Impressionado com a habilidade do Elias como desenvolvedor web! Seus projetos são visualmente atraentes e a funcionalidade é incrível. Ele realmente sabe como criar experiências digitais que se destacam.',
 	},
 	{
-		image: '/t-avt-3.png',
-		name: 'Jhon Doe',
-		position: 'Customer',
+		image: '/felipe.jpg',
+		name: 'Felipe',
+		position: 'Web Dev',
 		message:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+			'Elias é um mestre na arte do desenvolvimento web. Cada linha de código parece ter um propósito, resultando em sites que não apenas funcionam perfeitamente, mas também cativam os usuários desde o primeiro clique.',
+	},
+	{
+		image: '/andre.jpg',
+		name: 'Andre',
+		position: 'Full Stack',
+		message:
+			'É notável como Elias equilibra elegância de design e funcionalidade robusta em seus trabalhos como desenvolvedor web. Seus projetos não apenas atendem aos requisitos, mas também elevam a experiência do usuário a outro nível.',
 	},
 ];
 
