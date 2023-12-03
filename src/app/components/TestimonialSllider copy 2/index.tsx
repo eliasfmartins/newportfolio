@@ -43,6 +43,8 @@ import { Pagination, Navigation } from 'swiper/modules';
 import styled from 'styled-components';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/app/variants';
 
 export const TestimonialSlider = () => {
 	return (
@@ -65,7 +67,7 @@ export const TestimonialSlider = () => {
 						return (
 
 							<SwiperSlide key={index} className='pai'>
-								<div className='container'>
+								<motion.div className='container' initial='hidden' variants={fadeIn('down', 0.5)} animate='show' exit={'hidden'}>
 									{/*avatar, name, position*/}
 									<div className=''>
 										<div className='profile'>
@@ -81,7 +83,7 @@ export const TestimonialSlider = () => {
 										<div>{person.message}</div>
 										<div className='icon2'><FaQuoteRight size={30} /></div>
 									</div>
-								</div>
+								</motion.div>
 							</SwiperSlide>
 						);
 					})

@@ -5,6 +5,8 @@ import { TestimonialSlider } from '../components/TestimonialSllider copy 2';
 import { Circles } from '../components/Circles';
 import { Bulb } from '../components/Bulb';
 import { TopLeftImg } from '../components/TopLeftImg';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../variants';
 
 
 export default function Testimonials() {
@@ -16,11 +18,11 @@ export default function Testimonials() {
 
 
 			<TestimonialContent>
-				<div className='container'>
+				<motion.div className='container'initial='hidden' variants={fadeIn('down', 0.5)} animate='show' exit={'hidden'}>
 
 					<h2> What clients <span>say.</span></h2>
 
-				</div>
+				</motion.div>
 				<TestimonialSlider />
 
 			</TestimonialContent>

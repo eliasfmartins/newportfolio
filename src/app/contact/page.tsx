@@ -16,8 +16,8 @@ export default function Contact() {
 			<div className='container'>
 				<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>Linkedin <FaLinkedin size={40} /></motion.div>
 				<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>GitHub <FaGithub size={40} /></motion.div>
-				<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>E-mail <FaMailBulk size={40} /></motion.div>
-				<motion.div className='socials' initial='hidden' animate='show' exit={'hidden'}>Instagram	<BsInstagram size={40} /></motion.div>
+				<motion.div className='socials' variants={fadeIn('down', 0.5)} initial='hidden' animate='show' exit={'hidden'}>E-mail <FaMailBulk size={40} /></motion.div>
+				<motion.div className='socials' initial='hidden' variants={fadeIn('down', 0.5)}animate='show' exit={'hidden'}>Instagram	<BsInstagram size={40} /></motion.div>
 				<Circles />
 				<Bulb />
 			</div>
