@@ -60,6 +60,7 @@ export const TestimonialSlider = () => {
 				modules={[Pagination, Navigation]}
 
 				className='swipperCarrolsel'
+				loop={true}
 			>
 
 				{
@@ -67,7 +68,7 @@ export const TestimonialSlider = () => {
 						return (
 
 							<SwiperSlide key={index} className='pai'>
-								<motion.div className='container' initial='hidden' variants={fadeIn('down', 0.5)} animate='show' exit={'hidden'}>
+								<motion.div className='container' initial='hidden' variants={fadeIn('up', 0.5)} animate='show' exit={'hidden'}>
 									{/*avatar, name, position*/}
 									<div className=''>
 										<div className='profile'>
@@ -80,7 +81,7 @@ export const TestimonialSlider = () => {
 									<div className='list'></div>
 									<div className='citation'>
 										<div className='icon1'><FaQuoteLeft size={30} /></div>
-										<div>{person.message}</div>
+										<div className='paragrafo'>{person.message}</div>
 										<div className='icon2'><FaQuoteRight size={30} /></div>
 									</div>
 								</motion.div>
@@ -103,6 +104,9 @@ flex-direction: column;
 	width: 100%;
 
 
+}
+.paragrafo{
+	text-align: justify;
 }
 .list{
 	height: 100%;
