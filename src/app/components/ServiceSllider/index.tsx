@@ -69,7 +69,6 @@ export const ServiceSlider = () => {
 				},
 
 			}}
-			color='red'
 
 			freeMode={true}
 			pagination={{
@@ -154,5 +153,9 @@ cursor: pointer;
 	border-radius: 6px;
 	display: flex;
   gap: 0.5rem;
+	min-height:220px;
+	&:hover {
+	
+	}
  }
-`;
+ `;
