@@ -15,7 +15,7 @@ export const ImageContainer = styled.div`
 	animation: pulse 2s linear infinite;
 	z-index:1 ;
 
-	
+	// Go FUll Page
   @keyframes pulse {
     0% {
 			opacity: 1;
