@@ -9,40 +9,56 @@ const workSlides = {
 		{
 			images: [
 				{
-					title: 'title',
+					title: 'E-commerce ',
 					path: '/1.png',
+					gitHub:'https://github.com/eliasfmartins/mks-frontend-challenge',
+					site:'https://mks-frontend-challenge-jade.vercel.app/'
 				},
 				{
-					title: 'title',
+					title: 'Portfólio V2',
 					path: '/7.png',
+					gitHub:'https://github.com/eliasfmartins/portifolio-react',
+					site:'https://portifolio-react-peach.vercel.app/',
 				},
 				{
-					title: 'title',
+					title: 'Filmix',
 					path: '/4.png',
+					gitHub:'https://github.com/eliasfmartins/consumindo-api-filmes',
+					site:'https://eliasfmartins.github.io/consumindo-api-filmes/',
 				},
 				{
-					title: 'title',
+					title: 'Social',
 					path: '/3.png',
+					gitHub:'https://github.com/eliasfmartins/react-project-02',
+					site:'https://pomodoro-ts-66zs.vercel.app/',
 				},
 			],
 		},
 		{
 			images: [
 				{
-					title: 'title',
+					title: 'Landing Page',
 					path: '/6.png',
+					gitHub:'https://eliasfmartins.github.io/landingpage/#',
+					site:'https://eliasfmartins.github.io/landingpage/#',
 				},
 				{
-					title: 'title',
+					title: 'FilmeFlix',
 					path: '/5.png',
+					gitHub:'https://github.com/gontijogabriel/filmesflix',
+					site:'',
 				},
 				{
 					title: 'title',
 					path: '/2.png',
+					gitHub:'',
+					site:'',
 				},
 				{
 					title: 'Em Breve',
 					path: '/2.png',
+					gitHub:'',
+					site:'',
 				},
 			],
 		},
