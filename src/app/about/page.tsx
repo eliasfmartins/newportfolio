@@ -140,7 +140,7 @@ export default function About() {
 						{aboutData[index].info.map((item: InfoItem, itemIndex: number) => (
 							<div key={itemIndex} className="aboutskill">
 								<div>{item.title}</div>
-								{('stage' in item) && <div className="icons">{item.stage}</div>}
+								{('stage' in item) && <div className="icons">{(item as { title: string; stage: string }).stage}</div>}
 								<div className="pao">
 									{item.icons?.map((icon: JSX.Element, innerItemIndex: number) => (
 										<div className="icon" key={innerItemIndex}>{icon}</div>
