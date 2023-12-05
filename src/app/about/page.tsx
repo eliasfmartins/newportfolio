@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-key */
+
 'use client';
 import { useState } from 'react';
 import CountUp from 'react-countup';
@@ -73,14 +73,14 @@ const aboutData = [
 	},
 ];
 interface InfoItem {
-	title: string;
-	stage?: string;
-	icons?: JSX.Element[];
+  title: string;
+  stage?: string;
+  icons?: JSX.Element[];
 }
 
 interface AboutDataItem {
-	title: string;
-	info: InfoItem[];
+  title: string;
+  info: InfoItem[];
 }
 export default function About() {
 	const [index, setIndex] = useState(0);
@@ -137,33 +137,29 @@ export default function About() {
 				</motion.div>
 				<motion.div className="container" initial={'hidden'} exit={'hidden'} variants={fadeIn('up', (0.5))} animate={'show'}>
 					<div className="skills">
-						{aboutData[index].info.map((item: InfoItem, itemIndex: number) => (
-							<div key={itemIndex} className="aboutskill">
-								<div>{item.title}</div>
-								{('stage' in item) && <div className="icons">{(item as { title: string; stage: string }).stage}</div>}
-								<div className="pao">
-									{item.icons?.map((icon: JSX.Element, innerItemIndex: number) => (
-										<div className="icon" key={innerItemIndex}>{icon}</div>
-									))}
+						{aboutData.map((item, itemIndex) => {
+							return (
+								<div key={itemIndex} onClick={() => setIndex(itemIndex)} className={index === itemIndex ? 'on' : 'defalt'}>
+									<h3>
+										{item.title}
+
+									</h3>
 								</div>
-							</div>
-						))}
+							);
+						})}
 					</div>
-					{aboutData[index].info.map((item, itemIndex) => {
-						return (
-							<div key={itemIndex} className="aboutskill" >
-								<div >{item.title}</div>
-
-								{item.stage && <div className="icons">{item.stage}</div>}
-								<div className='pao'>
-
-									{item.icons?.map((icon, itemIndex) => {
-										return <div className='icon' key={itemIndex} >{icon}</div>;
-									})}
-								</div>
+					{aboutData[index].info.map((item: InfoItem, itemIndex: number) => (
+						<div key={itemIndex} className="aboutskill">
+							<div>{item.title}</div>
+							{('stage' in item) && <div className="icons">{(item as { title: string; stage: string }).stage}</div>}
+							<div className="pao">
+								{item.icons?.map((icon: JSX.Element, innerItemIndex: number) => (
+									<div className="icon" key={innerItemIndex}>{icon}</div>
+								))}
 							</div>
-						);
-					})}
+						</div>
+					))}
+
 
 
 				</motion.div>
