@@ -101,7 +101,7 @@ const PageContainer = styled.main`
 	gap: 2rem;
 }
 `;
-export const PageContent = styled.div`
+const PageContent = styled.div`
 overflow: hidden;
 @media (max-width:1300px){
 	width: 100%;
