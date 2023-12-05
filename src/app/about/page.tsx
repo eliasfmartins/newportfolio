@@ -35,7 +35,7 @@ const aboutData = [
 			},
 		],
 	},
-	
+
 	{
 		title: 'experiência',
 		info: [
@@ -72,11 +72,21 @@ const aboutData = [
 		],
 	},
 ];
+interface InfoItem {
+	title: string;
+	stage?: string;
+	icons?: JSX.Element[];
+}
+
+interface AboutDataItem {
+	title: string;
+	info: InfoItem[];
+}
 export default function About() {
 	const [index, setIndex] = useState(0);
 	return (
 		<AboutContainer>
-			<TopLeftImg/>
+			<TopLeftImg />
 			<Bulb />
 			<Circles />
 
@@ -122,28 +132,29 @@ export default function About() {
 							PROJETOS <br />
 							FINALIZADOS
 						</div>
-						
+
 					</div>
 				</motion.div>
 				<motion.div className="container" initial={'hidden'} exit={'hidden'} variants={fadeIn('up', (0.5))} animate={'show'}>
 					<div className="skills">
-						{aboutData.map((item, itemIndex) => {
-							return (
-								<div key={itemIndex} onClick={() => setIndex(itemIndex)} className={index === itemIndex ? 'on' : 'defalt'}>
-									<h3>
-										{item.title}
-
-									</h3>
+						{aboutData[index].info.map((item: InfoItem, itemIndex: number) => (
+							<div key={itemIndex} className="aboutskill">
+								<div>{item.title}</div>
+								{('stage' in item) && <div className="icons">{item.stage}</div>}
+								<div className="pao">
+									{item.icons?.map((icon: JSX.Element, innerItemIndex: number) => (
+										<div className="icon" key={innerItemIndex}>{icon}</div>
+									))}
 								</div>
-							);
-						})}
+							</div>
+						))}
 					</div>
 					{aboutData[index].info.map((item, itemIndex) => {
 						return (
 							<div key={itemIndex} className="aboutskill" >
 								<div >{item.title}</div>
 
-								<div className="icons">{item.stage}</div>
+								{item.stage && <div className="icons">{item.stage}</div>}
 								<div className='pao'>
 
 									{item.icons?.map((icon, itemIndex) => {
