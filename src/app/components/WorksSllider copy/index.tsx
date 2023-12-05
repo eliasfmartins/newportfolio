@@ -10,19 +10,19 @@ const workSlides = {
 			images: [
 				{
 					title: 'title',
-					path: '/thumb1.jpg',
+					path: '/1.png',
 				},
 				{
 					title: 'title',
-					path: '/thumb2.jpg',
+					path: '/7.png',
 				},
 				{
 					title: 'title',
-					path: '/thumb3.jpg',
+					path: '/4.png',
 				},
 				{
 					title: 'title',
-					path: '/thumb4.jpg',
+					path: '/3.png',
 				},
 			],
 		},
@@ -30,19 +30,19 @@ const workSlides = {
 			images: [
 				{
 					title: 'title',
-					path: '/thumb4.jpg',
+					path: '/6.png',
 				},
 				{
 					title: 'title',
-					path: '/thumb1.jpg',
+					path: '/5.png',
 				},
 				{
 					title: 'title',
-					path: '/thumb2.jpg',
+					path: '/2.png',
 				},
 				{
-					title: 'title',
-					path: '/thumb3.jpg',
+					title: 'Em Breve',
+					path: '/2.png',
 				},
 			],
 		},
@@ -84,7 +84,14 @@ export const WorkSlider = () => {
 												<div className="background">
 												</div>
 												<img src={img.path} className='card' />
-												<div className="text">Biscoito</div>
+												<div className="text">
+													<h2>{img.title}</h2>
+													<div>
+
+														<button>Site</button>
+														<button>GitHub</button>
+													</div>
+												</div>
 											</div>
 										</div>);
 									})}
@@ -190,7 +197,7 @@ export const SwipperCarrosel = styled.div`
 	.card:hover .text {
 		bottom: 45%;
 		visibility: visible;
-		top: 50%;
+		top: 40%;
   	left: 50%;
   	transform: translate(-50%, -50%);
 		transition: 0.3s;
