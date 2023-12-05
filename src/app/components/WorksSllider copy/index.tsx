@@ -11,26 +11,26 @@ const workSlides = {
 				{
 					title: 'E-commerce ',
 					path: '/1.png',
-					gitHub:'https://github.com/eliasfmartins/mks-frontend-challenge',
-					site:'https://mks-frontend-challenge-jade.vercel.app/'
+					gitHub: 'https://github.com/eliasfmartins/mks-frontend-challenge',
+					site: 'https://mks-frontend-challenge-jade.vercel.app/'
 				},
 				{
 					title: 'Portfólio V2',
 					path: '/7.png',
-					gitHub:'https://github.com/eliasfmartins/portifolio-react',
-					site:'https://portifolio-react-peach.vercel.app/',
+					gitHub: 'https://github.com/eliasfmartins/portifolio-react',
+					site: 'https://portifolio-react-peach.vercel.app/',
 				},
 				{
 					title: 'Filmix',
 					path: '/4.png',
-					gitHub:'https://github.com/eliasfmartins/consumindo-api-filmes',
-					site:'https://eliasfmartins.github.io/consumindo-api-filmes/',
+					gitHub: 'https://github.com/eliasfmartins/consumindo-api-filmes',
+					site: 'https://eliasfmartins.github.io/consumindo-api-filmes/',
 				},
 				{
 					title: 'Social',
 					path: '/3.png',
-					gitHub:'https://github.com/eliasfmartins/react-project-02',
-					site:'https://pomodoro-ts-66zs.vercel.app/',
+					gitHub: 'https://github.com/eliasfmartins/react-project-02',
+					site: 'https://pomodoro-ts-66zs.vercel.app/',
 				},
 			],
 		},
@@ -39,26 +39,26 @@ const workSlides = {
 				{
 					title: 'Landing Page',
 					path: '/6.png',
-					gitHub:'https://eliasfmartins.github.io/landingpage/#',
-					site:'https://eliasfmartins.github.io/landingpage/#',
+					gitHub: 'https://eliasfmartins.github.io/landingpage/#',
+					site: 'https://eliasfmartins.github.io/landingpage/#',
 				},
 				{
 					title: 'FilmeFlix',
 					path: '/5.png',
-					gitHub:'https://github.com/gontijogabriel/filmesflix',
-					site:'',
-				},
-				{
-					title: 'title',
-					path: '/2.png',
-					gitHub:'',
-					site:'',
+					gitHub: 'https://github.com/gontijogabriel/filmesflix',
+					site: '',
 				},
 				{
 					title: 'Em Breve',
 					path: '/2.png',
-					gitHub:'',
-					site:'',
+					gitHub: '',
+					site: '',
+				},
+				{
+					title: 'Em Breve',
+					path: '/2.png',
+					gitHub: '',
+					site: '',
 				},
 			],
 		},
@@ -101,11 +101,11 @@ export const WorkSlider = () => {
 												</div>
 												<img src={img.path} className='card' />
 												<div className="text">
-													<h2>{img.title}</h2>
-													<div>
+													<h3>{img.title}</h3>
+													<div className='buttons'>
+														{img.site && <a href={img.site} target='_blanks'>	<button className='btnLink' >Site</button></a>}
 
-														<button>Site</button>
-														<button>GitHub</button>
+														<a href={img.gitHub} target='_blanks'><button className='btnLink' >GitHub</button></a>
 													</div>
 												</div>
 											</div>
@@ -194,6 +194,10 @@ export const SwipperCarrosel = styled.div`
 	.text {
 	visibility: hidden;
 	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
 	bottom: 0;
 	top: 0%;
   left: 50%;
@@ -202,6 +206,24 @@ export const SwipperCarrosel = styled.div`
 	z-index: 500;
 	font-size: 2rem;
 	transition-delay: 200ms;
+	}
+	h3{
+		font-size: 1.8rem;
+	}
+	.buttons{
+		display: flex;
+		gap: 1rem;
+		margin-top: 10px;
+
+	}
+	.btnLink{
+		background: none;
+		border: none;
+		border-bottom: 2px solid white;
+		color: #fff;
+		font-size: 1rem;
+		padding: 5px;
+		cursor: pointer;
 	}
 
 	.card:hover .background {
