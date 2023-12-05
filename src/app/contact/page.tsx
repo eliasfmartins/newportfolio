@@ -42,7 +42,7 @@ export default function Contact() {
 		</ContactContainer >
 	);
 }
-const ContactContainer = styled.main`
+export const ContactContainer = styled.main`
 	max-width: 1200px;
 	gap: 2rem;
 	height: 100%;
