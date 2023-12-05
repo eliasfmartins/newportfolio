@@ -93,7 +93,7 @@ export const TestimonialSlider = () => {
 		</SwipperCarrosel>
 	);
 };
-export const SwipperCarrosel = styled.div`
+const SwipperCarrosel = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;

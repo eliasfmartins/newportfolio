@@ -31,7 +31,7 @@ export default function Work() {
 		</WorkContainer>
 	);
 }
-export const WorkContainer = styled.main`
+const WorkContainer = styled.main`
 width: 100%;
 height:auto;
 display:flex;
@@ -42,7 +42,7 @@ height:100%;
 
 `;
 
-export const WorkContent = styled.div`
+const WorkContent = styled.div`
 height: calc(100vh - 60px);
 display: flex;
 justify-content: baseline;

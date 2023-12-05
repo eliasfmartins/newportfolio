@@ -7,7 +7,7 @@ export const Circles = () => {
 			<Image src={'/circles.png	'} width={260} height={200} alt='circle-img' />
 		</ImageContainer>);
 };
-export const ImageContainer = styled.div`
+const ImageContainer = styled.div`
 	position: fixed;
 	right: 0px;
 	bottom: 0;

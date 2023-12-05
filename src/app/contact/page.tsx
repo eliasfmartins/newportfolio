@@ -7,12 +7,46 @@ import { fadeIn } from '../variants';
 import { FaGithub, FaLinkedin, FaMailBulk } from 'react-icons/fa';
 import { Bulb } from '../components/Bulb';
 import Link from 'next/link';
-export const ContactContainer = styled.main`
+export default function Contact() {
+	return (
+
+		<ContainerContact>
+			<motion.h2 variants={fadeIn('up', 0.2)} initial='hidden' animate='show' exit={'hidden'}>Let's <span>connect.</span></motion.h2>
+			<div className='container'>
+				<Link
+					target="_blank"
+					href={'https://www.linkedin.com/in/elias-f-martins/'}
+				>
+					<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>Linkedin <FaLinkedin size={40} /></motion.div>
+				</Link>
+				<Link
+					target="_blank"
+					href={'https://github.com/eliasfmartins'}>
+					<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>GitHub <FaGithub size={40} /></motion.div>
+				</Link>
+				<Link
+					target="_blank"
+					href={'mailto:eliasmartinsrock84@gmail.com?subject=duvida a respeito do portifolio'}>
+					<motion.div className='socials' variants={fadeIn('down', 0.5)} initial='hidden' animate='show' exit={'hidden'}>E-mail <FaMailBulk size={40} /></motion.div>
+				</Link>
+				<Link
+					target="_blank"
+					href={'https://www.instagram.com/eliasf.martins/'}>
+					<motion.div className='socials' initial='hidden' variants={fadeIn('down', 0.5)} animate='show' exit={'hidden'}>Instagram	<BsInstagram size={40} /></motion.div>
+				</Link>
+				<Circles />
+				<Bulb />
+			</div>
+
+		</ContainerContact >
+	);
+
+}
+
+const ContainerContact = styled.div`
 	max-width: 1200px;
 	gap: 2rem;
 	height: 100%;
-
-
 	margin: 0 auto;
 	padding: 0 2rem;
 	@media(max-width:1300px){
@@ -75,37 +109,3 @@ a{
 }
 
 `;
-export default function Contact() {
-	return (
-
-		<ContactContainer>
-			<motion.h2 variants={fadeIn('up', 0.2)} initial='hidden' animate='show' exit={'hidden'}>Let's <span>connect.</span></motion.h2>
-			<div className='container'>
-				<Link
-					target="_blank"
-					href={'https://www.linkedin.com/in/elias-f-martins/'}
-				>
-					<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>Linkedin <FaLinkedin size={40} /></motion.div>
-				</Link>
-				<Link
-					target="_blank"
-					href={'https://github.com/eliasfmartins'}>
-					<motion.div className='socials' variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit={'hidden'}>GitHub <FaGithub size={40} /></motion.div>
-				</Link>
-				<Link
-					target="_blank"
-					href={'mailto:eliasmartinsrock84@gmail.com?subject=duvida a respeito do portifolio'}>
-					<motion.div className='socials' variants={fadeIn('down', 0.5)} initial='hidden' animate='show' exit={'hidden'}>E-mail <FaMailBulk size={40} /></motion.div>
-				</Link>
-				<Link
-					target="_blank"
-					href={'https://www.instagram.com/eliasf.martins/'}>
-					<motion.div className='socials' initial='hidden' variants={fadeIn('down', 0.5)} animate='show' exit={'hidden'}>Instagram	<BsInstagram size={40} /></motion.div>
-				</Link>
-				<Circles />
-				<Bulb />
-			</div>
-
-		</ContactContainer >
-	);
-}

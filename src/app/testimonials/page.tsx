@@ -30,7 +30,7 @@ export default function Testimonials() {
 		</TestimonialContainer>
 	);
 }
-export const TestimonialContainer = styled.main`
+const TestimonialContainer = styled.main`
 width: 100%;
 height:100%;
 display:flex;
@@ -41,7 +41,7 @@ height:100%;
 
 `;
 
-export const TestimonialContent = styled.div`
+const TestimonialContent = styled.div`
 height: calc(100vh - 60px);
 display: flex;
 gap: 3rem;

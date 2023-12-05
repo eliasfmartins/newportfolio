@@ -8,7 +8,7 @@ export const TopLeftImg = () => {
 		</ContainerImg >
 	);
 };
-export const ContainerImg = styled.main`
+const ContainerImg = styled.main`
 width: 300px;
 height: 300px;
 position: absolute;

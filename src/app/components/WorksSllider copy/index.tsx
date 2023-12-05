@@ -120,7 +120,7 @@ export const WorkSlider = () => {
 		</SwipperCarrosel>
 	);
 };
-export const SwipperCarrosel = styled.div`
+const SwipperCarrosel = styled.div`
 	margin-bottom: 40px;
 
 

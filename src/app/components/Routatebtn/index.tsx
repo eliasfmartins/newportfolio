@@ -17,7 +17,7 @@ export const RoutateBtn = () => {
 	);
 };
 
-export const BtnContainer = styled.div`
+const BtnContainer = styled.div`
 @media (max-width:900px){
 	backdrop-filter: blur(2px); 
 }

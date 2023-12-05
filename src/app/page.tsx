@@ -49,7 +49,7 @@ export default function Home() {
 		</PageContainer>
 	);
 }
-export const PageContainer = styled.main`
+const PageContainer = styled.main`
 	overflow: hidden;
 	display:flex;
 	height: 100%;

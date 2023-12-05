@@ -103,7 +103,7 @@ export const ServiceSlider = () => {
 		</SwipperContainer>
 	);
 };
-export const SwipperContainer = styled.div`
+const SwipperContainer = styled.div`
 cursor: pointer;
 @media (max-width:600){
 	.containerswipper{

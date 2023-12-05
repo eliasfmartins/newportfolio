@@ -36,10 +36,10 @@ export default function Services() {
 		</ServicesContainer>
 	);
 }
-export const ServicesContainer = styled.main`
+ const ServicesContainer = styled.main`
 
 `;
-export const ServicesContent = styled.div`
+ const ServicesContent = styled.div`
   min-height: calc(100vh - 60px);
 	max-width: 1300px;
   @media (max-width: 600px) {

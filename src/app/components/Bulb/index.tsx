@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Bulb = () => {
 	return <ContainerBulb> <Image src={'/bulb.png'} width={260} height={350} alt="imagem bulb" /> </ContainerBulb>;
 };
-export const ContainerBulb = styled.div`
+const ContainerBulb = styled.div`
 	position: fixed;
 	left: -156px;
 	bottom: 15px;
