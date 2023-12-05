@@ -44,7 +44,7 @@ export default function Contact() {
 		</ContactContainer >
 	);
 }
-export const ContactContainer = styled.main`
+const ContactContainer = styled.main`
 	max-width: 1200px;
 	gap: 2rem;
 	height: 100%;
