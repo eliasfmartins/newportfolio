@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 'use client';
 import styled from 'styled-components';
 import { Circles } from '../components/Circles';
@@ -16,7 +15,6 @@ export default function Contact() {
 			<motion.h2 variants={fadeIn('up', 0.2)} initial='hidden' animate='show' exit={'hidden'}>Let's <span>connect.</span></motion.h2>
 			<div className='container'>
 				<Link
-					//facebook sla  e github
 					target="_blank"
 					href={'https://www.linkedin.com/in/elias-f-martins/'}
 				>
