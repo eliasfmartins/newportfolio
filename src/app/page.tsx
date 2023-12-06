@@ -114,6 +114,6 @@ overflow: hidden;
 		font-size: 3rem;
 	}
 	@media (max-width:600px){
-	height: calc(100vh - 60px);
+	height: 60%;
 	}
 `;
