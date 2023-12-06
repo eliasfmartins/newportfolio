@@ -68,7 +68,7 @@ span{
 	align-items: center;
 	justify-content: space-around;
 	height: 100%;
-	min-height: 80vh;
+	min-height: 75vh;
 	gap: 2rem;
 
 	

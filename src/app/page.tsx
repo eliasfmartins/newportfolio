@@ -104,7 +104,6 @@ overflow: hidden;
 	flex-direction: column;
 	align-items: center;
 }
-
 	max-width: 1200px;
 	min-height: calc(100vh - 60px);
 	margin: 0 auto;
@@ -115,6 +114,6 @@ overflow: hidden;
 		font-size: 3rem;
 	}
 	@media (max-width:600px){
-		height: 100%;
+	height: calc(100vh - 60px);
 	}
 `;
