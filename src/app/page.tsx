@@ -119,4 +119,7 @@ overflow: hidden;
 	h1{
 		font-size: 3rem;
 	}
+	@media (max-width:600px){
+		height: 100%;
+	}
 `;

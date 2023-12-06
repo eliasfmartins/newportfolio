@@ -107,7 +107,7 @@ a{
 	}
 	@media(max-width:600px){
 		margin-top: 50px ;
-		margin-bottom: 60px ;
+		margin-bottom: 100px ;
 
 	}
 `;
