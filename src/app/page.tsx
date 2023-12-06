@@ -62,7 +62,6 @@ const PageContainer = styled.main`
 	align-items: center;
 	div.text{
 		width: 100%;
-		margin-bottom: 80px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -70,11 +69,9 @@ const PageContainer = styled.main`
 	}
 	.image::before{
 		height: 100%;
-		/* z-index: 50; */
 	}
 }
-.image{
-}
+
 .image::before {
     content: '';
     background-image: url('./explosion.png');
@@ -94,8 +91,6 @@ const PageContainer = styled.main`
 	flex-direction: column;
 	justify-content: center;
 	height: 100%;
-	min-height:60%;
-	gap: 4rem;
 	width: 65%;
 	padding: 25px;
 	gap: 2rem;
