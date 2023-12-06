@@ -49,13 +49,7 @@ const ContainerContact = styled.div`
 	height: 100%;
 	margin: 0 auto;
 	padding: 0 2rem;
-	@media(max-width:1300px){
-		margin-top: 60px ;
-		margin-bottom: 150px ;
-	}
-	@media(max-width:600px){
-		margin-top: 50px ;
-	}
+	
 h2{
 	text-align: center;
 	font-size: 3rem;
@@ -107,5 +101,13 @@ a{
 		border:solid 2px #FF8C00;
 	}
 }
+	@media(max-width:1300px){
+		margin-top: 60px ;
+		margin-bottom: 150px ;
+	}
+	@media(max-width:600px){
+		margin-top: 50px ;
+		margin-bottom: 60px ;
 
+	}
 `;
