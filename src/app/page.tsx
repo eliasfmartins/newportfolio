@@ -114,6 +114,8 @@ overflow: hidden;
 		font-size: 3rem;
 	}
 	@media (max-width:600px){
-	height: 50%;
+	height: 50vh;
+	background: red;
+
 	}
 `;
