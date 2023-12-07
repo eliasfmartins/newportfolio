@@ -106,6 +106,10 @@ a{
 		margin-bottom: 150px ;
 	}
 	@media(max-width:600px){
+		.container{
+			height: auto;
+			gap: 2rem;
+		}
 		margin-top: 50px ;
 		margin-bottom: 100px ;
 
