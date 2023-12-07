@@ -79,7 +79,6 @@ z-index:10;
 	.container{
 		width: 90%;
 	}
-
 }
 
 	@media (max-width:600px){

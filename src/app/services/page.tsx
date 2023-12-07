@@ -15,7 +15,7 @@ import { TopLeftImg } from '../components/TopLeftImg';
 export default function Services() {
 	return (
 		<ServicesContainer>
-			<TopLeftImg/>
+			<TopLeftImg />
 			<Bulb />
 			<ServicesContent>
 
@@ -36,12 +36,13 @@ export default function Services() {
 		</ServicesContainer>
 	);
 }
- const ServicesContainer = styled.main`
+const ServicesContainer = styled.main`
 
 `;
- const ServicesContent = styled.div`
-  min-height: calc(100vh - 60px);
+const ServicesContent = styled.div`
+  
 	max-width: 1300px;
+
   @media (max-width: 600px) {
     flex-direction: column;
     gap: 2rem;
@@ -69,11 +70,12 @@ export default function Services() {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
     padding: 10px;
 
     @media (min-width: 601px) {
       width: 40%;
+			height:auto;
+			min-height: calc(100vh - 60px);
     }
   }
 
