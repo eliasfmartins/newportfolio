@@ -39,6 +39,9 @@ flex-direction:column;
 justify-content:space-around;
 gap:4rem;
 height:100%;
+@media (max-width:600px){
+	margin:0;
+}
 
 `;
 
@@ -47,6 +50,7 @@ height: calc(100vh - 60px);
 display: flex;
 justify-content: baseline;
 z-index:10;
+
 
 @media (max-width: 1200px){
 	height: calc(100vh - 30vh);
@@ -78,7 +82,11 @@ z-index:10;
 
 }
 @media (max-width: 600px){
-	margin: 120px 0;
+	@media (max-width:600px){
+	gap: 2rem;
+	margin:0;
+	margin-bottom:60px;
+}
 	text-align: center;
 
 

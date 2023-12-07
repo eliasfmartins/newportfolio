@@ -18,7 +18,7 @@ export default function Testimonials() {
 
 
 			<TestimonialContent>
-				<motion.div className='container'initial='hidden' variants={fadeIn('down', 0.5)} animate='show' exit={'hidden'}>
+				<motion.div className='container' initial='hidden' variants={fadeIn('down', 0.5)} animate='show' exit={'hidden'}>
 
 					<h2> What clients <span>say.</span></h2>
 
@@ -87,8 +87,6 @@ z-index: 10;
 @media (max-width: 600px){
 	margin-top: 100px;
 	margin-bottom: 160px;
-
-
 
 }
 h2{
