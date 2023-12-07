@@ -115,9 +115,10 @@ overflow: hidden;
 	}
 	@media (max-width:600px){
 	min-height: none;
-	height: 40vh;
+	height: auto;
 	gap: 2rem;
 	align-items: center;
-	margin-bottom: 78px;
+	justify-content: center;
+	margin-bottom: 50px;
 	}
 `;
