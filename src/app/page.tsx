@@ -116,6 +116,8 @@ overflow: hidden;
 	@media (max-width:600px){
 	height: 50vh;
 	background: red;
-
+	gap: 2rem;
+	align-items: center;
+	margin-bottom: 78px;
 	}
 `;
