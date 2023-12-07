@@ -109,6 +109,7 @@ a{
 		.container{
 			height: auto;
 			gap: 2rem;
+			width: 100%;
 		}
 		margin-top: 50px ;
 		margin-bottom: 100px ;
