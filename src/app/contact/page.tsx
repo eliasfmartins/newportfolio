@@ -68,6 +68,7 @@ span{
 	align-items: center;
 	justify-content: space-around;
 	height: 90%;
+	width:100%;
 	min-height: 75vh;
 	gap: 2rem;
 
@@ -76,7 +77,7 @@ span{
 a{
 	color: white;
 	text-decoration:none;
-	width:60%;
+	width:90%;
 	display:flex;
 	justify-content:center;
 }
@@ -108,8 +109,9 @@ a{
 	@media(max-width:600px){
 		.container{
 			height: auto;
-			gap: 2rem;
+			gap: 1rem;
 			width: 100%;
+			justify-content: space-evenly;
 		}
 		margin-top: 50px ;
 		margin-bottom: 100px ;
