@@ -114,8 +114,7 @@ overflow: hidden;
 		font-size: 3rem;
 	}
 	@media (max-width:600px){
-	height: 50vh;
-	background: red;
+	height: 40vh;
 	gap: 2rem;
 	align-items: center;
 	margin-bottom: 78px;
