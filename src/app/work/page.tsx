@@ -36,8 +36,8 @@ width: 100%;
 height:auto;
 display:flex;
 flex-direction:column;
-justify-content:space-around;
-gap:4rem;
+justify-content:space-evenly;
+gap:2rem;
 height:100%;
 @media (max-width:600px){
 	margin:0;
@@ -81,17 +81,18 @@ z-index:10;
 	}
 
 }
-@media (max-width: 600px){
+
 	@media (max-width:600px){
-	gap: 2rem;
+	.container{
+		gap: 2rem;
+		height: 40%;
+	}
 	margin:0;
-	margin-bottom:60px;
+	margin-bottom:40px;
 }
 	text-align: center;
 
 
-
-}
 h2{
 	font-size: 3rem;
 }
@@ -104,13 +105,13 @@ span{
 	align-items: center;
 .container{
 	display: flex;
-	gap: 4rem;
+	gap: 2rem;
 	flex-direction: column;
 	min-width: 35%;
 	padding: 0 20px;
 	height: 50%;
 	text-align: justify;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 
 `;
