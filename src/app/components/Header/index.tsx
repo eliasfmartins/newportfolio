@@ -1,14 +1,13 @@
 import Link from 'next/link';
-import { Bruno_Ace_SC } from 'next/font/google';
 import { BsInstagram } from 'react-icons/bs';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { HeaderContainer, HeaderContent } from './styles';
-const Bruno = Bruno_Ace_SC({ weight: ['400'], subsets: ['latin'] });
+import { bruno } from '@/app/fonts';
 
 export const Header = () => {
 	return (
-		<HeaderContainer className={Bruno.className}>
+		<HeaderContainer className={bruno.className}>
 			<HeaderContent>
 
 				<h2>
