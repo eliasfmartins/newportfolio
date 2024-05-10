@@ -1,4 +1,4 @@
-export const fadeIn = (direction, delay) => {
+export const fadeIn = (direction: string, delay: string) => {
 	return {
 		hidden: {
 			y: direction === 'up' ? 80 : direction === 'down' ? -80 : 0,
