@@ -8,6 +8,7 @@ import { GlobalStyles } from './globalStyles';
 import StyledComponentsRegistry from './lib/registry';
 import { usePathname } from 'next/navigation';
 import { roboto } from './fonts';
+import { Analytics } from '@vercel/analytics/react';
 export default function RootLayout({
 	children,
 }: {
@@ -29,6 +30,7 @@ export default function RootLayout({
 						</motion.div>
 					</AnimatePresence>
 					<GlobalStyles />
+					<Analytics/>
 				</StyledComponentsRegistry>
 			</body>
 		</html >
