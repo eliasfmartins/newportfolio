@@ -76,6 +76,7 @@ gap: 2rem;
 padding: 0 2rem;
 align-items: center;
 margin: 0 auto;
+margin-top: -45px;
 h1{
 	text-align: center;
 }
@@ -89,6 +90,8 @@ p{
   }
 
   @media (min-width: 600px) {
+	margin-top: 0;
+
 	margin-bottom: 0px;
 	h1{
 		font-size: 2.5rem;
