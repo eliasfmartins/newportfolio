@@ -69,14 +69,14 @@ const PageContainer = styled.main`
 const TextContainer = styled.div`
 display: flex;
 max-width: 1200px;
-height: calc(100vh - 60px);
 flex-direction: column;
-justify-content: center;
+justify-content: start;
 gap: 2rem;
 padding: 0 2rem;
 align-items: center;
 margin: 0 auto;
-margin-top: -45px;
+margin-top: 35px;
+
 h1{
 	text-align: center;
 }
@@ -89,9 +89,11 @@ p{
     color: #ff8c00;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 550px) {
+	height: calc(100vh - 60px);
 	margin-top: 0;
-
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 0px;
 	h1{
 		font-size: 2.5rem;
