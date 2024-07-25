@@ -59,8 +59,8 @@ border: solid white 1px;
     margin: auto;
     animation: rotate 6s linear infinite;
     transform-origin: center center;
-width: 141px;
- height: 148px;
+		width: 141px;
+		height: 148px;
   }
 
   .arrow {

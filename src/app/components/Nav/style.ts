@@ -115,7 +115,8 @@ export const NavContainer = styled.nav`
 	color:white;
 
   .navcontent {
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(5px); 
     height: auto;
     display: flex;
     width: 100%;
