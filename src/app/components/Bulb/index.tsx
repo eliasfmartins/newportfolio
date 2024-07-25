@@ -2,7 +2,9 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 export const Bulb = () => {
-	return <ContainerBulb> <Image src={'/bulb.png'} width={260} height={350} alt="imagem bulb" /> </ContainerBulb>;
+	return <ContainerBulb> 
+		<Image src={'/bulb.png'} width={260} height={350} alt="imagem bulb" />
+		</ContainerBulb>;
 };
 const ContainerBulb = styled.div`
 	position: fixed;

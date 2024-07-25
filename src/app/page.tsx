@@ -11,133 +11,101 @@ import { Bulb } from './components/Bulb';
 export default function Home() {
 	return (
 		<PageContainer as={motion.div}>
-			<PageContent>
-
-				<TopLeftImg />
-				<div className='text'>
-					<motion.h1 variants={fadeIn('up', 0.4)}
-						initial="hidden"
-						animate="show"
-						exit="hidden">
-						Welcome to my  <span>portfolio</span>
-					</motion.h1>
-					<motion.p
-						variants={fadeIn('down', 0.4)}
-						initial="hidden"
-						animate="show"
-						exit="hidden"
-					>
-						Bem-vindo ao meu portfólio! Aqui, você terá a oportunidade de explorar quem eu sou, minhas habilidades, conhecimentos e projetos.Sinta-se à vontade para explorar e fazer parte desta jornada comigo
-					</motion.p>
-					<motion.div
-						variants={fadeIn('down', 0.4)}
-						initial="hidden"
-						animate="show"
-						exit="hidden"
-					>
-						{/* <ProjectsBtn /> */}
-						<RoutateBtn />
-					</motion.div>
-				</div>
-
-			</PageContent>
-			<div className='image'></div>
+			<TopLeftImg />
+			<TextContainer>
+				<motion.h1
+					variants={fadeIn('up', 0.4)}
+					initial="hidden"
+					animate="show"
+					exit="hidden"
+				>
+					Welcome to my <span>portfolio</span>
+				</motion.h1>
+				<motion.p
+					variants={fadeIn('down', 0.4)}
+					initial="hidden"
+					animate="show"
+					exit="hidden"
+				>
+					Bem-vindo ao meu portfólio! Aqui, você terá a oportunidade de explorar quem eu sou, minhas habilidades, conhecimentos e projetos. Sinta-se à vontade para explorar e fazer parte desta jornada comigo.
+				</motion.p>
+				<motion.div
+					variants={fadeIn('down', 0.4)}
+					initial="hidden"
+					animate="show"
+					exit="hidden"
+				>
+					<RoutateBtn />
+				</motion.div>
+			</TextContainer>
+			<div className="image"></div>
 			<Circles />
 			<Bulb />
-
-
 		</PageContainer>
 	);
 }
+
 const PageContainer = styled.main`
-	overflow: hidden;
-	display:flex;
-	height: 100%;
-	
+  overflow: hidden;
 
-@media (max-width:1300px){
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	div.text{
-		width: 100%;
-		display: flex;
-		align-items: center;
-		padding: 25px;
-	}
-	.image::before{
-		height: 100%;
-	}
-}
-@media (max-width:600px){
-	
-	height: auto;
-	gap: 2rem;
-	min-height: none;
-
-	display: flex;
-	.text{
-		height:auto;
-	}
-
-}
-
-.image::before {
+  .image::before {
     content: '';
     background-image: url('./explosion.png');
     mix-blend-mode: luminosity;
     width: 100%;
-		height: 100%;
+    height: 100%;
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
     position: fixed;
     right: 0;
     bottom: 0;
-    z-index: -1; /* Garante que o pseudo-elemento está atrás do conteúdo */
+    z-index: -1;
   }
-.text{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 100%;
-	width: 65%;
-	padding: 25px;
-	gap: 2rem;
-}
 `;
-const PageContent = styled.div`
-overflow: hidden;
+
+
+
+const TextContainer = styled.div`
+display: flex;
 max-width: 1200px;
-	margin: 0 auto;
-	span{
-		color: #FF8C00;
+height: calc(100vh - 60px);
+flex-direction: column;
+justify-content: center;
+gap: 2rem;
+padding: 0 2rem;
+align-items: center;
+margin: 0 auto;
+h1{
+	text-align: center;
+}
+p{
+
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  span {
+    color: #ff8c00;
+  }
+
+  @media (min-width: 600px) {
+	margin-bottom: 0px;
+	h1{
+		font-size: 2.5rem;
+	}
+
+    
+  }
+
+  @media (min-width: 800px) {
+	align-items: start;
+	text-align: left;
+	p{
+		max-width: 700px;
+	text-align: left;
 	}
 	h1{
 		font-size: 3rem;
 	}
-@media (max-width:1300px){
-
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-@media (min-width:601px){
-	min-height: calc(100vh - 60px);
-
-}
-
-	@media (max-width:600px){
-	
-	height: auto;
-	gap: 2rem;
-	min-height: none;
-
-	display: flex;
-	.text{
-		height:auto;
-	}
-	}
+  }
 `;

@@ -6,12 +6,12 @@ export const HeaderContent = styled.div`
 	padding: 0 2rem;
 	gap: 2rem;
 	height: 60px;
-@media (max-width:700px){
+@media (max-width:800px){
 	flex-direction: column;
 	align-items: center;
-	padding: 2rem 0;
-	gap: 0rem;
-	height: auto;
+	padding: 1rem 0;
+	gap: 1.1rem;
+	height: 120px;
 
 
 }
