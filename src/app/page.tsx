@@ -75,10 +75,11 @@ gap: 2rem;
 padding: 0 2rem;
 align-items: center;
 margin: 0 auto;
-margin-top: 20px;
+margin-top: 30px;
 
 h1{
 	text-align: center;
+	font-size: 2.5rem;
 }
 p{
 
