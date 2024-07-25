@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Circles = () => {
 	return (
 		<ImageContainer>
-			<img src={'/circles.png	'} alt='circle-img' className='fotinha' />
+			<Image src={'/circles.png	'} width={260} height={200} alt='circle-img' />
 		</ImageContainer>);
 };
 const ImageContainer = styled.div`
@@ -14,10 +14,6 @@ const ImageContainer = styled.div`
 	mix-blend-mode: color-dodge;
 	animation: pulse 2s linear infinite;
 	z-index:1 ;
-	.fotinha{
-		width: 260px;
-		height: 260px;
-	}
 
 	// Go FUll Page
   @keyframes pulse {

@@ -39,8 +39,8 @@ export default function Home() {
 				</motion.div>
 			</TextContainer>
 			<div className="image"></div>
-			<Circles />
 			<Bulb />
+			<Circles />
 		</PageContainer>
 	);
 }
@@ -75,7 +75,7 @@ gap: 2rem;
 padding: 0 2rem;
 align-items: center;
 margin: 0 auto;
-margin-top: 35px;
+margin-top: 20px;
 
 h1{
 	text-align: center;
